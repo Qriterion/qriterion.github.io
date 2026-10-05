@@ -1,6 +1,20 @@
 const formatNumber = (value) => new Intl.NumberFormat("en-US", { maximumFractionDigits: 4 }).format(value);
 const latestDate = (metrics) => metrics.map((metric) => metric.asOf).sort().at(-1);
 
+const stableHash = (value) => [...value].reduce((hash, character) => ((hash * 31) + character.charCodeAt(0)) >>> 0, 0);
+
+function interleaveEvidence(cards) {
+  const reported = cards.filter((card) => card.cardStatus !== "Validated Benchmark").sort((a, b) => stableHash(`${a.provider}/${a.qpu}`) - stableHash(`${b.provider}/${b.qpu}`));
+  const validated = cards.filter((card) => card.cardStatus === "Validated Benchmark").sort((a, b) => stableHash(`${a.provider}/${a.qpu}`) - stableHash(`${b.provider}/${b.qpu}`));
+  const mixed = [];
+  const count = Math.max(reported.length, validated.length);
+  for (let index = 0; index < count; index += 1) {
+    if (reported[index]) mixed.push(reported[index]);
+    if (validated[index]) mixed.push(validated[index]);
+  }
+  return mixed;
+}
+
 function metricValue(metric) {
   const uncertainty = metric.uncertainty == null ? "" : ` ± ${formatNumber(metric.uncertainty)}`;
   return `${metric.comparator || ""}${formatNumber(metric.value)}${uncertainty}`;
@@ -56,7 +70,7 @@ function createCard(card, sources) {
 }
 
 async function init() {
-  const response = await fetch("data/qpu-cards.json?v=20261005-7", { cache: "no-store" });
+  const response = await fetch("data/qpu-cards.json?v=20261005-8", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load QPU card data.");
   const { cards, sources } = await response.json();
   const search = document.querySelector("#search");
@@ -92,7 +106,7 @@ async function init() {
       cardsEl.innerHTML = '<p class="empty">No cards match these filters.</p>';
       return;
     }
-    shown.forEach((card) => cardsEl.append(createCard(card, sources)));
+    interleaveEvidence(shown).forEach((card) => cardsEl.append(createCard(card, sources)));
   };
 
   [search, provider, region, hardware, route, benchmark].forEach((control) => control.addEventListener("input", render));
