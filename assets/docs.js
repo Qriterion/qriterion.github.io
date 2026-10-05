@@ -113,4 +113,16 @@ function renderNavigation(active) { const nav=document.querySelector("#method-na
 
 function select(id) { const method=methods[id]||generic(id), article=document.querySelector("#method-article"), fragment=document.querySelector("#method-template").content.cloneNode(true); fragment.querySelector(".crumb-level").textContent=method.level;fragment.querySelector(".crumb-title").textContent=method.title;fragment.querySelector(".article-kicker").textContent=method.kicker;fragment.querySelector("h1").textContent=method.title;fragment.querySelector(".article-summary").textContent=method.summary;fragment.querySelector(".purpose-content").innerHTML=method.purpose;fragment.querySelector(".theory-content").innerHTML=method.theory;fragment.querySelector(".circuit-figure").innerHTML=diagram[method.circuit];fragment.querySelector(".quantikz-source").textContent=quantikz[method.circuit];fragment.querySelector(".qasm-code").textContent=qasm[method.code];fragment.querySelector(".qasm-description").textContent=method.description;for(const tag of method.tags){const el=document.createElement("span");el.textContent=tag;fragment.querySelector(".protocol-tags").append(el);}for(const step of method.steps){const el=document.createElement("li");el.textContent=step;fragment.querySelector(".method-steps").append(el);}for(const report of method.reports){const el=document.createElement("li");el.textContent=report;fragment.querySelector(".report-list").append(el);}const qtz=fragment.querySelector(".quantikz-copy"),qasmButton=fragment.querySelector(".qasm-copy");qtz.addEventListener("click",()=>copy(quantikz[method.circuit],qtz,"⧉ Copy Quantikz"));qasmButton.addEventListener("click",()=>copy(qasm[method.code],qasmButton,"⧉ Copy code"));article.replaceChildren(fragment);renderNavigation(id);history.replaceState(null,"",`#${id}`);if(innerWidth<900)article.scrollIntoView({behavior:"smooth",block:"start"}); }
 
+const layout = document.querySelector(".docs-layout");
+const sidebarToggle = document.querySelector("#sidebar-toggle");
+function setSidebar(collapsed) {
+  layout.classList.toggle("sidebar-collapsed", collapsed);
+  sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
+  sidebarToggle.setAttribute("aria-label", collapsed ? "Show methods sidebar" : "Hide methods sidebar");
+  sidebarToggle.querySelector("span:last-child").textContent = collapsed ? "Show methods" : "Methods";
+  try { localStorage.setItem("qriterion-docs-sidebar-collapsed", String(collapsed)); } catch (_) { /* Storage is optional. */ }
+}
+try { setSidebar(localStorage.getItem("qriterion-docs-sidebar-collapsed") === "true"); } catch (_) { setSidebar(false); }
+sidebarToggle.addEventListener("click", () => setSidebar(!layout.classList.contains("sidebar-collapsed")));
+
 const initial=location.hash.slice(1);select(initial || "standard-rb");
