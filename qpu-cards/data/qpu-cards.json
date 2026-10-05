@@ -1,101 +1,1602 @@
 {
   "sources": {
-    "S05": {"title": "Azure Quantum provider list", "url": "https://learn.microsoft.com/en-us/azure/quantum/qc-target-list"},
-    "S07": {"title": "Quantinuum system benchmarks", "url": "https://docs.quantinuum.com/systems/user_guide/hardware_user_guide/benchmarks/system_benchmarks.html"},
-    "S12": {"title": "QuEra AI information page", "url": "https://www.quera.com/ai-info-page"},
-    "S13": {"title": "Pasqal provider on Azure Quantum", "url": "https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal"},
-    "S14": {"title": "Beating classical computers with Borealis", "url": "https://www.xanadu.ai/blog/beating-classical-computers-with-Borealis"},
-    "S15": {"title": "Atom Computing AC1000", "url": "https://atom-computing.com/ac1000/"},
-    "S16": {"title": "OriginQ Wukong 180", "url": "https://originqc.com/blogs/originq-wukong-180"},
-    "S18": {"title": "IBM Quantum hardware and roadmap", "url": "https://www.ibm.com/quantum/technology"},
-    "S19": {"title": "IBM Quantum Q4 2025 update", "url": "https://www.ibm.com/quantum/blog/whats-new-q4-2025"},
-    "S20": {"title": "Quantinuum systems release, November 2025", "url": "https://docs.quantinuum.com/product-updates/posts/systems_11_2025/"},
-    "S21": {"title": "IonQ / AWS collaboration", "url": "https://ionq.com/blog/ionq-announces-continued-collaboration-with-amazon-web-services-to-extend"},
-    "S22": {"title": "Rigetti 2024 Form 10-K", "url": "https://investors.rigetti.com/static-files/7d2eb912-600b-48fc-8845-87de6bff68d4"},
-    "S23": {"title": "IQM Garnet QPU benchmarks", "url": "https://www.iqmacademy.com/qpu/garnet/"},
-    "S24": {"title": "D-Wave quantum research data sheet", "url": "https://www.dwavesys.com/media/izepcfnx/quantum-research-data-sheet-v2.pdf"},
-    "S25": {"title": "Pasqal logical-vs-physical qubits result", "url": "https://www.pasqal.com/newsroom/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations-an-industry-first-for-neutral-atom-quantum-computing/"}
+    "S05": {
+      "title": "Azure Quantum provider list",
+      "url": "https://learn.microsoft.com/en-us/azure/quantum/qc-target-list"
+    },
+    "S07": {
+      "title": "Quantinuum system benchmarks",
+      "url": "https://docs.quantinuum.com/systems/user_guide/hardware_user_guide/benchmarks/system_benchmarks.html"
+    },
+    "S12": {
+      "title": "QuEra AI information page",
+      "url": "https://www.quera.com/ai-info-page"
+    },
+    "S13": {
+      "title": "Pasqal provider on Azure Quantum",
+      "url": "https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal"
+    },
+    "S14": {
+      "title": "Beating classical computers with Borealis",
+      "url": "https://www.xanadu.ai/blog/beating-classical-computers-with-Borealis"
+    },
+    "S15": {
+      "title": "Atom Computing AC1000",
+      "url": "https://atom-computing.com/ac1000/"
+    },
+    "S16": {
+      "title": "OriginQ Wukong 180",
+      "url": "https://originqc.com/blogs/originq-wukong-180"
+    },
+    "S18": {
+      "title": "IBM Quantum hardware and roadmap",
+      "url": "https://www.ibm.com/quantum/technology"
+    },
+    "S19": {
+      "title": "IBM Quantum Q4 2025 update",
+      "url": "https://www.ibm.com/quantum/blog/whats-new-q4-2025"
+    },
+    "S20": {
+      "title": "Quantinuum systems release, November 2025",
+      "url": "https://docs.quantinuum.com/product-updates/posts/systems_11_2025/"
+    },
+    "S21": {
+      "title": "IonQ / AWS collaboration",
+      "url": "https://ionq.com/blog/ionq-announces-continued-collaboration-with-amazon-web-services-to-extend"
+    },
+    "S22": {
+      "title": "Rigetti 2024 Form 10-K",
+      "url": "https://investors.rigetti.com/static-files/7d2eb912-600b-48fc-8845-87de6bff68d4"
+    },
+    "S23": {
+      "title": "IQM Garnet QPU benchmarks",
+      "url": "https://www.iqmacademy.com/qpu/garnet/"
+    },
+    "S24": {
+      "title": "D-Wave quantum research data sheet",
+      "url": "https://www.dwavesys.com/media/izepcfnx/quantum-research-data-sheet-v2.pdf"
+    },
+    "S25": {
+      "title": "Pasqal logical-vs-physical qubits result",
+      "url": "https://www.pasqal.com/newsroom/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations-an-industry-first-for-neutral-atom-quantum-computing/"
+    },
+    "S26": {
+      "title": "KuaFu ScQ-ScQ-P5 calibration export (user-provided XLSX)",
+      "url": null
+    },
+    "S27": {
+      "title": "LogicBit Quantum Cloud dashboard screenshots (user-provided)",
+      "url": null
+    }
   },
   "cards": [
-    {"provider":"IBM Quantum","platform":"IBM Quantum Platform","route":"First-party cloud","qpu":"Heron family","metrics":[
-      {"metric":"Physical qubits","metricClass":"Capability descriptor","value":156,"comparator":"=","unit":"qubits","asOf":"2026-08-01","sourceId":"S18","evidenceType":"Vendor specification","note":"Heron-family hardware page."},
-      {"metric":"Errors per layered gate","metricClass":"Benchmark","value":0.00233,"comparator":"=","unit":"error/layer","asOf":"2026-08-01","sourceId":"S18","evidenceType":"Vendor specification","note":"Published as 2.33E-3."},
-      {"metric":"CLOPS","metricClass":"Benchmark","value":340000,"comparator":"=","unit":"layers/s","asOf":"2026-08-01","sourceId":"S18","evidenceType":"Vendor specification","note":"Published as 340K."}
-    ]},
-    {"provider":"IBM Quantum","platform":"IBM Quantum Platform","route":"First-party cloud","qpu":"ibm_boston (Heron r3)","metrics":[
-      {"metric":"Errors per layered gate","metricClass":"Benchmark","value":0.23,"comparator":"=","unit":"%","asOf":"2025-12-31","sourceId":"S19","evidenceType":"Vendor update","note":"Best EPLG in IBM's Q4 2025 update."}
-    ]},
-    {"provider":"Quantinuum","platform":"Quantinuum Nexus / System H","route":"First-party cloud","qpu":"H2-2","metrics":[
-      {"metric":"Quantum Volume","metricClass":"Benchmark","value":33554432,"comparator":"=","unit":"QV (2^25)","asOf":"2025-11-03","sourceId":"S20","evidenceType":"Vendor update","note":"33.5 million public claim."},
-      {"metric":"QV circuit width","metricClass":"Benchmark input","value":25,"comparator":"=","unit":"qubits","asOf":"2025-09-08","sourceId":"S07","evidenceType":"Benchmark data","note":"Published n=25 QV dataset."},
-      {"metric":"Two-qubit gate fidelity","metricClass":"Vendor metric","value":99.9,"comparator":">","unit":"%","asOf":"2025-11-03","sourceId":"S20","evidenceType":"Vendor update","note":"Greater than 99.9%."}
-    ]},
-    {"provider":"Quantinuum","platform":"Quantinuum Nexus / System H","route":"First-party cloud","qpu":"H2-1","metrics":[
-      {"metric":"GHZ state fidelity","metricClass":"Benchmark","value":0.6156,"comparator":"=","uncertainty":0.0082,"unit":"probability","asOf":"2025-01-01","sourceId":"S07","evidenceType":"System benchmark","note":"56-qubit GHZ; source states no SPAM correction."},
-      {"metric":"GHZ entangled-state size","metricClass":"Benchmark input","value":56,"comparator":"=","unit":"qubits","asOf":"2025-01-01","sourceId":"S07","evidenceType":"System benchmark","note":"Associated with the GHZ-fidelity observation."}
-    ]},
-    {"provider":"IonQ","platform":"IonQ Quantum Cloud","route":"Amazon Braket","qpu":"Forte","metrics":[
-      {"metric":"Algorithmic qubits","metricClass":"Vendor benchmark","value":36,"comparator":"=","unit":"#AQ","asOf":"2025-01-01","sourceId":"S21","evidenceType":"Vendor update","note":"IonQ Forte reported for Amazon Braket."}
-    ]},
-    {"provider":"D-Wave","platform":"D-Wave Leap","route":"First-party cloud","qpu":"Advantage2 prototype","metrics":[
-      {"metric":"Qubit count","metricClass":"Capability descriptor","value":1200,"comparator":">","unit":"qubits","asOf":"2024-01-01","sourceId":"S24","evidenceType":"Vendor data sheet","note":"Prototype stated as 1,200+ qubits."},
-      {"metric":"Time-to-solution acceleration","metricClass":"Workload benchmark","value":20,"comparator":"=","unit":"x","asOf":"2024-01-01","sourceId":"S24","evidenceType":"Vendor data sheet","note":"Problem class and baseline must be read with the cited source."}
-    ]},
-    {"provider":"Rigetti","platform":"Rigetti QCS","route":"First-party cloud","qpu":"Ankaa-3","metrics":[
-      {"metric":"Computational qubits","metricClass":"Capability descriptor","value":84,"comparator":"=","unit":"qubits","asOf":"2025-03-07","sourceId":"S22","evidenceType":"Official filing","note":"Available to QCS partners."},
-      {"metric":"Median iSWAP 2Q fidelity","metricClass":"Vendor metric","value":99,"comparator":"=","unit":"%","asOf":"2025-03-07","sourceId":"S22","evidenceType":"Official filing","note":"Internal-testing median."},
-      {"metric":"Median fSim 2Q fidelity","metricClass":"Vendor metric","value":99.5,"comparator":"=","unit":"%","asOf":"2025-03-07","sourceId":"S22","evidenceType":"Official filing","note":"Internal-testing median."},
-      {"metric":"iSWAP gate duration","metricClass":"Device characterization","value":72,"comparator":"=","unit":"ns","asOf":"2025-03-07","sourceId":"S22","evidenceType":"Official filing","note":"Median gate time."}
-    ]},
-    {"provider":"IQM","platform":"IQM Resonance via Braket","route":"Amazon Braket","qpu":"Garnet","metrics":[
-      {"metric":"Computational qubits","metricClass":"Capability descriptor","value":20,"comparator":"=","unit":"qubits","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"Square-lattice superconducting QPU."},
-      {"metric":"Median 1Q fidelity","metricClass":"Vendor metric","value":99.92,"comparator":"=","unit":"%","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"Median across qubits."},
-      {"metric":"Median 2Q fidelity","metricClass":"Vendor metric","value":99.51,"comparator":"=","unit":"%","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"Median across couplers."},
-      {"metric":"Quantum Volume","metricClass":"Benchmark","value":32,"comparator":"=","unit":"QV","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"QV = 2^5."},
-      {"metric":"CLOPS","metricClass":"Benchmark","value":2600,"comparator":"=","unit":"layers/s","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"Reported as CLOPS."},
-      {"metric":"Q-score","metricClass":"Application benchmark","value":15,"comparator":"=","unit":"score","asOf":"2025-01-01","sourceId":"S23","evidenceType":"Vendor benchmark page","note":"Vendor wording: size of combinatorial-optimization task solved."}
-    ]},
-    {"provider":"QuEra","platform":"QuEra Aquila via Braket","route":"Amazon Braket","qpu":"Aquila","metrics":[
-      {"metric":"Physical qubits","metricClass":"Capability descriptor","value":256,"comparator":"=","unit":"qubits","asOf":"2026-10-01","sourceId":"S12","evidenceType":"Vendor page","note":"Public-cloud scale via Amazon Braket."},
-      {"metric":"Uptime","metricClass":"Operational metric","value":99,"comparator":"=","unit":"%","asOf":"2026-10-01","sourceId":"S12","evidenceType":"Vendor page","note":"Reported since November 2022."},
-      {"metric":"Availability","metricClass":"Operational metric","value":130,"comparator":"=","unit":"hours/week","asOf":"2026-10-01","sourceId":"S12","evidenceType":"Vendor page","note":"Reported availability."}
-    ]},
-    {"provider":"QuEra","platform":"QuEra","route":"Vendor / on-premises","qpu":"Gemini","metrics":[
-      {"metric":"Physical qubits","metricClass":"Capability descriptor","value":260,"comparator":"=","unit":"qubits","asOf":"2026-10-01","sourceId":"S12","evidenceType":"Vendor page","note":"Retained separately from Aquila."},
-      {"metric":"Physical gate fidelity","metricClass":"Vendor metric","value":99.5,"comparator":"=","unit":"%","asOf":"2026-10-01","sourceId":"S12","evidenceType":"Vendor page","note":"Roadmap-table specification."}
-    ]},
-    {"provider":"Pasqal","platform":"Pasqal Cloud / Azure Quantum","route":"Azure Quantum","qpu":"FRESNEL / FRESNEL_CAN1","metrics":[
-      {"metric":"Qubit count","metricClass":"Capability descriptor","value":100,"comparator":"=","unit":"qubits","asOf":"2026-04-23","sourceId":"S13","evidenceType":"Cloud target specification","note":"Azure Quantum public target list."}
-    ]},
-    {"provider":"Pasqal","platform":"Pasqal Cloud","route":"First-party cloud","qpu":"Pasqal neutral-atom processor","metrics":[
-      {"metric":"Gate fidelity","metricClass":"Vendor metric","value":99.4,"comparator":"=","unit":"%","asOf":"2026-06-01","sourceId":"S25","evidenceType":"Vendor update","note":"Source does not name the cloud target; do not assume FRESNEL."}
-    ]},
-    {"provider":"Xanadu","platform":"Xanadu Cloud","route":"First-party cloud","qpu":"Borealis","metrics":[
-      {"metric":"Squeezed-state qubits","metricClass":"Capability descriptor","value":216,"comparator":"=","unit":"qubits","asOf":"2022-06-01","sourceId":"S14","evidenceType":"Vendor benchmark page","note":"Gaussian-boson-sampling system."},
-      {"metric":"Per-sample runtime","metricClass":"Workload benchmark","value":36,"comparator":"=","unit":"microseconds","asOf":"2022-06-01","sourceId":"S14","evidenceType":"Vendor benchmark page","note":"Direct-simulation comparison task only."},
-      {"metric":"Classical direct-simulation estimate","metricClass":"Workload benchmark","value":9000,"comparator":"=","unit":"years/sample","asOf":"2022-06-01","sourceId":"S14","evidenceType":"Vendor benchmark page","note":"Estimate for stated direct-simulation method."},
-      {"metric":"Claimed runtime advantage","metricClass":"Workload benchmark","value":50000000,"comparator":">","unit":"x","asOf":"2022-06-01","sourceId":"S14","evidenceType":"Vendor benchmark page","note":"Relative to earlier photonic demonstrations, per source."}
-    ]},
-    {"provider":"Atom Computing","platform":"Atom Computing Cloud","route":"Partner cloud","qpu":"AC1000","metrics":[
-      {"metric":"Physical qubits","metricClass":"Capability descriptor","value":1200,"comparator":">","unit":"qubits","asOf":"2026-01-01","sourceId":"S15","evidenceType":"Product specification","note":"Product page states 1,200+."},
-      {"metric":"1Q gate fidelity","metricClass":"Vendor metric","value":99.9,"comparator":">","unit":"%","asOf":"2026-01-01","sourceId":"S15","evidenceType":"Product specification","note":"Product page states >99.9%."},
-      {"metric":"2Q gate fidelity","metricClass":"Vendor metric","value":99.6,"comparator":">","unit":"%","asOf":"2026-01-01","sourceId":"S15","evidenceType":"Product specification","note":"Product page states >99.6%."},
-      {"metric":"SPAM fidelity","metricClass":"Vendor metric","value":99.8,"comparator":">","unit":"%","asOf":"2026-01-01","sourceId":"S15","evidenceType":"Product specification","note":"Product page states >99.8%."}
-    ]},
-    {"provider":"Origin Quantum","platform":"OriginQ Cloud","route":"First-party cloud","qpu":"Wukong 180","metrics":[
-      {"metric":"Data qubits","metricClass":"Capability descriptor","value":180,"comparator":"=","unit":"qubits","asOf":"2026-05-07","sourceId":"S16","evidenceType":"Product specification","note":"Computational/data qubits."},
-      {"metric":"T1 coherence time","metricClass":"Device characterization","value":40,"comparator":"=","unit":"microseconds","asOf":"2026-05-07","sourceId":"S16","evidenceType":"Product specification","note":"Average / typical as stated by source."},
-      {"metric":"1Q gate fidelity","metricClass":"Vendor metric","value":99.9,"comparator":"=","unit":"%","asOf":"2026-05-07","sourceId":"S16","evidenceType":"Product specification","note":"Average / typical as stated by source."},
-      {"metric":"2Q gate fidelity","metricClass":"Vendor metric","value":99,"comparator":"=","unit":"%","asOf":"2026-05-07","sourceId":"S16","evidenceType":"Product specification","note":"Average / typical as stated by source."}
-    ]},
-    {"provider":"Microsoft","platform":"Azure Quantum","route":"Azure Quantum","qpu":"IonQ Aria 1","metrics":[
-      {"metric":"Target qubit count","metricClass":"Capability descriptor","value":25,"comparator":"=","unit":"qubits","asOf":"2026-04-23","sourceId":"S05","evidenceType":"Cloud target specification","note":"Azure Quantum public target list."}
-    ]},
-    {"provider":"Microsoft","platform":"Azure Quantum","route":"Azure Quantum","qpu":"IonQ Forte 1","metrics":[
-      {"metric":"Target qubit count","metricClass":"Capability descriptor","value":36,"comparator":"=","unit":"qubits","asOf":"2026-04-23","sourceId":"S05","evidenceType":"Cloud target specification","note":"Azure Quantum public target list."}
-    ]},
-    {"provider":"Microsoft","platform":"Azure Quantum","route":"Azure Quantum","qpu":"Rigetti Cepheus-1-108Q","metrics":[
-      {"metric":"Target qubit count","metricClass":"Capability descriptor","value":108,"comparator":"=","unit":"qubits","asOf":"2026-04-23","sourceId":"S05","evidenceType":"Cloud target specification","note":"Azure Quantum public target list."}
-    ]}
+    {
+      "provider": "IBM Quantum",
+      "platform": "IBM Quantum Platform",
+      "route": "First-party cloud",
+      "qpu": "Heron family",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 156,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-08-01",
+          "sourceId": "S18",
+          "evidenceType": "Vendor specification",
+          "note": "Heron-family hardware page."
+        },
+        {
+          "metric": "Errors per layered gate",
+          "metricClass": "Benchmark",
+          "value": 0.00233,
+          "comparator": "=",
+          "unit": "error/layer",
+          "asOf": "2026-08-01",
+          "sourceId": "S18",
+          "evidenceType": "Vendor specification",
+          "note": "Published as 2.33E-3."
+        },
+        {
+          "metric": "CLOPS",
+          "metricClass": "Benchmark",
+          "value": 340000,
+          "comparator": "=",
+          "unit": "layers/s",
+          "asOf": "2026-08-01",
+          "sourceId": "S18",
+          "evidenceType": "Vendor specification",
+          "note": "Published as 340K."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "IBM Quantum",
+      "platform": "IBM Quantum Platform",
+      "route": "First-party cloud",
+      "qpu": "ibm_boston (Heron r3)",
+      "metrics": [
+        {
+          "metric": "Errors per layered gate",
+          "metricClass": "Benchmark",
+          "value": 0.23,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2025-12-31",
+          "sourceId": "S19",
+          "evidenceType": "Vendor update",
+          "note": "Best EPLG in IBM's Q4 2025 update."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Quantinuum",
+      "platform": "Quantinuum Nexus / System H",
+      "route": "First-party cloud",
+      "qpu": "H2-2",
+      "metrics": [
+        {
+          "metric": "Quantum Volume",
+          "metricClass": "Benchmark",
+          "value": 33554432,
+          "comparator": "=",
+          "unit": "QV (2^25)",
+          "asOf": "2025-11-03",
+          "sourceId": "S20",
+          "evidenceType": "Vendor update",
+          "note": "33.5 million public claim."
+        },
+        {
+          "metric": "QV circuit width",
+          "metricClass": "Benchmark input",
+          "value": 25,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2025-09-08",
+          "sourceId": "S07",
+          "evidenceType": "Benchmark data",
+          "note": "Published n=25 QV dataset."
+        },
+        {
+          "metric": "Two-qubit gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.9,
+          "comparator": ">",
+          "unit": "%",
+          "asOf": "2025-11-03",
+          "sourceId": "S20",
+          "evidenceType": "Vendor update",
+          "note": "Greater than 99.9%."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Quantinuum",
+      "platform": "Quantinuum Nexus / System H",
+      "route": "First-party cloud",
+      "qpu": "H2-1",
+      "metrics": [
+        {
+          "metric": "GHZ state fidelity",
+          "metricClass": "Benchmark",
+          "value": 0.6156,
+          "comparator": "=",
+          "uncertainty": 0.0082,
+          "unit": "probability",
+          "asOf": "2025-01-01",
+          "sourceId": "S07",
+          "evidenceType": "System benchmark",
+          "note": "56-qubit GHZ; source states no SPAM correction."
+        },
+        {
+          "metric": "GHZ entangled-state size",
+          "metricClass": "Benchmark input",
+          "value": 56,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2025-01-01",
+          "sourceId": "S07",
+          "evidenceType": "System benchmark",
+          "note": "Associated with the GHZ-fidelity observation."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "IonQ",
+      "platform": "IonQ Quantum Cloud",
+      "route": "Amazon Braket",
+      "qpu": "Forte",
+      "metrics": [
+        {
+          "metric": "Algorithmic qubits",
+          "metricClass": "Vendor benchmark",
+          "value": 36,
+          "comparator": "=",
+          "unit": "#AQ",
+          "asOf": "2025-01-01",
+          "sourceId": "S21",
+          "evidenceType": "Vendor update",
+          "note": "IonQ Forte reported for Amazon Braket."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "D-Wave",
+      "platform": "D-Wave Leap",
+      "route": "First-party cloud",
+      "qpu": "Advantage2 prototype",
+      "metrics": [
+        {
+          "metric": "Qubit count",
+          "metricClass": "Capability descriptor",
+          "value": 1200,
+          "comparator": ">",
+          "unit": "qubits",
+          "asOf": "2024-01-01",
+          "sourceId": "S24",
+          "evidenceType": "Vendor data sheet",
+          "note": "Prototype stated as 1,200+ qubits."
+        },
+        {
+          "metric": "Time-to-solution acceleration",
+          "metricClass": "Workload benchmark",
+          "value": 20,
+          "comparator": "=",
+          "unit": "x",
+          "asOf": "2024-01-01",
+          "sourceId": "S24",
+          "evidenceType": "Vendor data sheet",
+          "note": "Problem class and baseline must be read with the cited source."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Rigetti",
+      "platform": "Rigetti QCS",
+      "route": "First-party cloud",
+      "qpu": "Ankaa-3",
+      "metrics": [
+        {
+          "metric": "Computational qubits",
+          "metricClass": "Capability descriptor",
+          "value": 84,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2025-03-07",
+          "sourceId": "S22",
+          "evidenceType": "Official filing",
+          "note": "Available to QCS partners."
+        },
+        {
+          "metric": "Median iSWAP 2Q fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2025-03-07",
+          "sourceId": "S22",
+          "evidenceType": "Official filing",
+          "note": "Internal-testing median."
+        },
+        {
+          "metric": "Median fSim 2Q fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.5,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2025-03-07",
+          "sourceId": "S22",
+          "evidenceType": "Official filing",
+          "note": "Internal-testing median."
+        },
+        {
+          "metric": "iSWAP gate duration",
+          "metricClass": "Device characterization",
+          "value": 72,
+          "comparator": "=",
+          "unit": "ns",
+          "asOf": "2025-03-07",
+          "sourceId": "S22",
+          "evidenceType": "Official filing",
+          "note": "Median gate time."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "IQM",
+      "platform": "IQM Resonance via Braket",
+      "route": "Amazon Braket",
+      "qpu": "Garnet",
+      "metrics": [
+        {
+          "metric": "Computational qubits",
+          "metricClass": "Capability descriptor",
+          "value": 20,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Square-lattice superconducting QPU."
+        },
+        {
+          "metric": "Median 1Q fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.92,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Median across qubits."
+        },
+        {
+          "metric": "Median 2Q fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.51,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Median across couplers."
+        },
+        {
+          "metric": "Quantum Volume",
+          "metricClass": "Benchmark",
+          "value": 32,
+          "comparator": "=",
+          "unit": "QV",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "QV = 2^5."
+        },
+        {
+          "metric": "CLOPS",
+          "metricClass": "Benchmark",
+          "value": 2600,
+          "comparator": "=",
+          "unit": "layers/s",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Reported as CLOPS."
+        },
+        {
+          "metric": "Q-score",
+          "metricClass": "Application benchmark",
+          "value": 15,
+          "comparator": "=",
+          "unit": "score",
+          "asOf": "2025-01-01",
+          "sourceId": "S23",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Vendor wording: size of combinatorial-optimization task solved."
+        }
+      ],
+      "region": "Europe"
+    },
+    {
+      "provider": "QuEra",
+      "platform": "QuEra Aquila via Braket",
+      "route": "Amazon Braket",
+      "qpu": "Aquila",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 256,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-01",
+          "sourceId": "S12",
+          "evidenceType": "Vendor page",
+          "note": "Public-cloud scale via Amazon Braket."
+        },
+        {
+          "metric": "Uptime",
+          "metricClass": "Operational metric",
+          "value": 99,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-01",
+          "sourceId": "S12",
+          "evidenceType": "Vendor page",
+          "note": "Reported since November 2022."
+        },
+        {
+          "metric": "Availability",
+          "metricClass": "Operational metric",
+          "value": 130,
+          "comparator": "=",
+          "unit": "hours/week",
+          "asOf": "2026-10-01",
+          "sourceId": "S12",
+          "evidenceType": "Vendor page",
+          "note": "Reported availability."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "QuEra",
+      "platform": "QuEra",
+      "route": "Vendor / on-premises",
+      "qpu": "Gemini",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 260,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-01",
+          "sourceId": "S12",
+          "evidenceType": "Vendor page",
+          "note": "Retained separately from Aquila."
+        },
+        {
+          "metric": "Physical gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.5,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-01",
+          "sourceId": "S12",
+          "evidenceType": "Vendor page",
+          "note": "Roadmap-table specification."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Pasqal",
+      "platform": "Pasqal Cloud / Azure Quantum",
+      "route": "Azure Quantum",
+      "qpu": "FRESNEL / FRESNEL_CAN1",
+      "metrics": [
+        {
+          "metric": "Qubit count",
+          "metricClass": "Capability descriptor",
+          "value": 100,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-04-23",
+          "sourceId": "S13",
+          "evidenceType": "Cloud target specification",
+          "note": "Azure Quantum public target list."
+        }
+      ],
+      "region": "Europe"
+    },
+    {
+      "provider": "Pasqal",
+      "platform": "Pasqal Cloud",
+      "route": "First-party cloud",
+      "qpu": "Pasqal neutral-atom processor",
+      "metrics": [
+        {
+          "metric": "Gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.4,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-06-01",
+          "sourceId": "S25",
+          "evidenceType": "Vendor update",
+          "note": "Source does not name the cloud target; do not assume FRESNEL."
+        }
+      ],
+      "region": "Europe"
+    },
+    {
+      "provider": "Xanadu",
+      "platform": "Xanadu Cloud",
+      "route": "First-party cloud",
+      "qpu": "Borealis",
+      "metrics": [
+        {
+          "metric": "Squeezed-state qubits",
+          "metricClass": "Capability descriptor",
+          "value": 216,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2022-06-01",
+          "sourceId": "S14",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Gaussian-boson-sampling system."
+        },
+        {
+          "metric": "Per-sample runtime",
+          "metricClass": "Workload benchmark",
+          "value": 36,
+          "comparator": "=",
+          "unit": "microseconds",
+          "asOf": "2022-06-01",
+          "sourceId": "S14",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Direct-simulation comparison task only."
+        },
+        {
+          "metric": "Classical direct-simulation estimate",
+          "metricClass": "Workload benchmark",
+          "value": 9000,
+          "comparator": "=",
+          "unit": "years/sample",
+          "asOf": "2022-06-01",
+          "sourceId": "S14",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Estimate for stated direct-simulation method."
+        },
+        {
+          "metric": "Claimed runtime advantage",
+          "metricClass": "Workload benchmark",
+          "value": 50000000,
+          "comparator": ">",
+          "unit": "x",
+          "asOf": "2022-06-01",
+          "sourceId": "S14",
+          "evidenceType": "Vendor benchmark page",
+          "note": "Relative to earlier photonic demonstrations, per source."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Atom Computing",
+      "platform": "Atom Computing Cloud",
+      "route": "Partner cloud",
+      "qpu": "AC1000",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 1200,
+          "comparator": ">",
+          "unit": "qubits",
+          "asOf": "2026-01-01",
+          "sourceId": "S15",
+          "evidenceType": "Product specification",
+          "note": "Product page states 1,200+."
+        },
+        {
+          "metric": "1Q gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.9,
+          "comparator": ">",
+          "unit": "%",
+          "asOf": "2026-01-01",
+          "sourceId": "S15",
+          "evidenceType": "Product specification",
+          "note": "Product page states >99.9%."
+        },
+        {
+          "metric": "2Q gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.6,
+          "comparator": ">",
+          "unit": "%",
+          "asOf": "2026-01-01",
+          "sourceId": "S15",
+          "evidenceType": "Product specification",
+          "note": "Product page states >99.6%."
+        },
+        {
+          "metric": "SPAM fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.8,
+          "comparator": ">",
+          "unit": "%",
+          "asOf": "2026-01-01",
+          "sourceId": "S15",
+          "evidenceType": "Product specification",
+          "note": "Product page states >99.8%."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Origin Quantum",
+      "platform": "OriginQ Cloud",
+      "route": "First-party cloud",
+      "qpu": "Wukong 180",
+      "metrics": [
+        {
+          "metric": "Data qubits",
+          "metricClass": "Capability descriptor",
+          "value": 180,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-05-07",
+          "sourceId": "S16",
+          "evidenceType": "Product specification",
+          "note": "Computational/data qubits."
+        },
+        {
+          "metric": "T1 coherence time",
+          "metricClass": "Device characterization",
+          "value": 40,
+          "comparator": "=",
+          "unit": "microseconds",
+          "asOf": "2026-05-07",
+          "sourceId": "S16",
+          "evidenceType": "Product specification",
+          "note": "Average / typical as stated by source."
+        },
+        {
+          "metric": "1Q gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99.9,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-05-07",
+          "sourceId": "S16",
+          "evidenceType": "Product specification",
+          "note": "Average / typical as stated by source."
+        },
+        {
+          "metric": "2Q gate fidelity",
+          "metricClass": "Vendor metric",
+          "value": 99,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-05-07",
+          "sourceId": "S16",
+          "evidenceType": "Product specification",
+          "note": "Average / typical as stated by source."
+        }
+      ],
+      "region": "China"
+    },
+    {
+      "provider": "Microsoft",
+      "platform": "Azure Quantum",
+      "route": "Azure Quantum",
+      "qpu": "IonQ Aria 1",
+      "metrics": [
+        {
+          "metric": "Target qubit count",
+          "metricClass": "Capability descriptor",
+          "value": 25,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-04-23",
+          "sourceId": "S05",
+          "evidenceType": "Cloud target specification",
+          "note": "Azure Quantum public target list."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Microsoft",
+      "platform": "Azure Quantum",
+      "route": "Azure Quantum",
+      "qpu": "IonQ Forte 1",
+      "metrics": [
+        {
+          "metric": "Target qubit count",
+          "metricClass": "Capability descriptor",
+          "value": 36,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-04-23",
+          "sourceId": "S05",
+          "evidenceType": "Cloud target specification",
+          "note": "Azure Quantum public target list."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "Microsoft",
+      "platform": "Azure Quantum",
+      "route": "Azure Quantum",
+      "qpu": "Rigetti Cepheus-1-108Q",
+      "metrics": [
+        {
+          "metric": "Target qubit count",
+          "metricClass": "Capability descriptor",
+          "value": 108,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-04-23",
+          "sourceId": "S05",
+          "evidenceType": "Cloud target specification",
+          "note": "Azure Quantum public target list."
+        }
+      ],
+      "region": "North America"
+    },
+    {
+      "provider": "KuaFu Quantum",
+      "region": "China",
+      "platform": "KuaFu Quantum Cloud",
+      "route": "First-party cloud",
+      "qpu": "ScQ-ScQ-P5",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 5,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Count of qubit records in the supplied ScQ-ScQ-P5 calibration export."
+        },
+        {
+          "metric": "Coupler connections",
+          "metricClass": "Capability descriptor",
+          "value": 4,
+          "comparator": "=",
+          "unit": "connections",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Count of non-empty connection records in the supplied calibration export."
+        },
+        {
+          "metric": "Mean T1 (source label)",
+          "metricClass": "Device characterization",
+          "value": 30.77841711214615,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+        },
+        {
+          "metric": "Mean T2 (source label)",
+          "metricClass": "Device characterization",
+          "value": 3.7863681971233403,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+        },
+        {
+          "metric": "Mean anharmonicity (source label)",
+          "metricClass": "Device characterization",
+          "value": 0.2034517915867085,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+        },
+        {
+          "metric": "Mean qubit frequency (source label)",
+          "metricClass": "Device characterization",
+          "value": 3.822882,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+        },
+        {
+          "metric": "Mean readout fidelity state0 (source label)",
+          "metricClass": "Vendor metric",
+          "value": 0.907128,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values."
+        },
+        {
+          "metric": "Mean readout fidelity state1 (source label)",
+          "metricClass": "Vendor metric",
+          "value": 0.859144,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values."
+        },
+        {
+          "metric": "Mean single-qubit gate fidelity (source label)",
+          "metricClass": "Vendor metric",
+          "value": 0.9984,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of five per-qubit values."
+        },
+        {
+          "metric": "Mean CZ (source label)",
+          "metricClass": "Vendor metric",
+          "value": 0.9884,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S26",
+          "evidenceType": "User-provided source",
+          "note": "Arithmetic mean of four connection values. The source header does not state a unit or protocol."
+        }
+      ]
+    },
+    {
+      "provider": "LogicBit",
+      "region": "China",
+      "platform": "LogicBit Quantum Cloud",
+      "route": "First-party cloud",
+      "qpu": "MQ02",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 24,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Coupler count",
+          "metricClass": "Capability descriptor",
+          "value": 23,
+          "comparator": "=",
+          "unit": "couplers",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 71.14,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 16.85,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 4.66,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.947,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.607,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.986,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Average F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.98,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 76.26,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 14.19,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 4.1,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.962,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.657,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.995,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        },
+        {
+          "metric": "Median F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.987,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, sequence."
+        }
+      ]
+    },
+    {
+      "provider": "LogicBit",
+      "region": "China",
+      "platform": "LogicBit Quantum Cloud",
+      "route": "First-party cloud",
+      "qpu": "QZ01-surface_code",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 17,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Coupler count",
+          "metricClass": "Capability descriptor",
+          "value": 24,
+          "comparator": "=",
+          "unit": "couplers",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 38.22,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 9.59,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 3.32,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.93,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.458,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.994,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.98,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average Logical error rate (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.04,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 40.29,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 8.91,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 3.18,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.932,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.467,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.996,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.979,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        }
+      ]
+    },
+    {
+      "provider": "LogicBit",
+      "region": "China",
+      "platform": "LogicBit Quantum Cloud",
+      "route": "First-party cloud",
+      "qpu": "QZ01-repetition_code",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 17,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Coupler count",
+          "metricClass": "Capability descriptor",
+          "value": 16,
+          "comparator": "=",
+          "unit": "couplers",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 36.47,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 9.53,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 3.32,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.929,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.448,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.996,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.98,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Average Logical error rate (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.00046,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 36.01,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 9.1,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 3.13,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.928,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.472,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.996,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        },
+        {
+          "metric": "Median F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.98,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit, wave."
+        }
+      ]
+    },
+    {
+      "provider": "LogicBit",
+      "region": "China",
+      "platform": "LogicBit Quantum Cloud",
+      "route": "First-party cloud",
+      "qpu": "AGate-100",
+      "metrics": [
+        {
+          "metric": "Physical qubits",
+          "metricClass": "Capability descriptor",
+          "value": 101,
+          "comparator": "=",
+          "unit": "qubits",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit."
+        },
+        {
+          "metric": "Coupler count",
+          "metricClass": "Capability descriptor",
+          "value": 157,
+          "comparator": "=",
+          "unit": "couplers",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard topology field; task types shown: circuit."
+        },
+        {
+          "metric": "Average T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 64.5,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 12.13,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 4.43,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.917,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.281,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.98,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Average F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.975,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard average; task types shown: circuit."
+        },
+        {
+          "metric": "Median T1 (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 65.57,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median T2E (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 11.29,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median T2* (dashboard label)",
+          "metricClass": "Device characterization",
+          "value": 4.2,
+          "comparator": "=",
+          "unit": "source unit not shown",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median F_SQ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.931,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median F_CZ (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 99.483,
+          "comparator": "=",
+          "unit": "%",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median F00 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.988,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        },
+        {
+          "metric": "Median F11 (dashboard label)",
+          "metricClass": "Vendor metric",
+          "value": 0.982,
+          "comparator": "=",
+          "unit": "probability",
+          "asOf": "2026-10-05",
+          "sourceId": "S27",
+          "evidenceType": "User-provided screenshot",
+          "note": "Dashboard median; task types shown: circuit."
+        }
+      ]
+    }
   ]
 }

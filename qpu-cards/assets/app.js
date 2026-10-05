@@ -19,6 +19,7 @@ function createCard(card, sources) {
   const template = document.querySelector("#card-template");
   const node = template.content.cloneNode(true);
   node.querySelector(".provider").textContent = card.provider;
+  node.querySelector(".region").textContent = card.region;
   node.querySelector(".route").textContent = card.route;
   node.querySelector("h2").textContent = card.qpu;
   node.querySelector(".platform").textContent = card.platform;
@@ -34,11 +35,14 @@ function createCard(card, sources) {
   const details = node.querySelector(".detail-list");
   card.metrics.forEach((metric) => {
     const source = sources[metric.sourceId];
+    const sourceLabel = source.url
+      ? `<a href="${source.url}" target="_blank" rel="noopener">${metric.sourceId}: ${source.title}</a>`
+      : `${metric.sourceId}: ${source.title}`;
     const detail = document.createElement("div");
     detail.className = "detail-item";
     detail.innerHTML = `
       <div class="detail-title"><span>${metric.metric}: ${metricValue(metric)} ${metric.unit}</span><span class="type">${metric.metricClass}</span></div>
-      <p class="detail-meta">As of ${metric.asOf} · ${metric.evidenceType} · <a href="${source.url}" target="_blank" rel="noopener">${metric.sourceId}: ${source.title}</a></p>
+      <p class="detail-meta">As of ${metric.asOf} · ${metric.evidenceType} · ${sourceLabel}</p>
       <p class="detail-note">${metric.note}</p>`;
     details.append(detail);
   });
@@ -51,12 +55,14 @@ async function init() {
   const { cards, sources } = await response.json();
   const search = document.querySelector("#search");
   const provider = document.querySelector("#provider-filter");
+  const region = document.querySelector("#region-filter");
   const route = document.querySelector("#route-filter");
   const metric = document.querySelector("#metric-filter");
   const cardsEl = document.querySelector("#cards");
   const results = document.querySelector("#results");
 
   populateSelect(provider, cards.map((card) => card.provider));
+  populateSelect(region, cards.map((card) => card.region));
   populateSelect(route, cards.map((card) => card.route));
   populateSelect(metric, cards.flatMap((card) => card.metrics.map((item) => item.metricClass)));
   document.querySelector("#card-count").textContent = `${cards.length} QPU cards · ${cards.reduce((sum, card) => sum + card.metrics.length, 0)} public observations`;
@@ -67,6 +73,7 @@ async function init() {
       const haystack = [card.qpu, card.provider, card.platform, card.route, ...card.metrics.map((item) => `${item.metric} ${item.note}`)].join(" ").toLowerCase();
       return (!needle || haystack.includes(needle))
         && (!provider.value || card.provider === provider.value)
+        && (!region.value || card.region === region.value)
         && (!route.value || card.route === route.value)
         && (!metric.value || card.metrics.some((item) => item.metricClass === metric.value));
     });
@@ -79,8 +86,8 @@ async function init() {
     shown.forEach((card) => cardsEl.append(createCard(card, sources)));
   };
 
-  [search, provider, route, metric].forEach((control) => control.addEventListener("input", render));
-  document.querySelector("#reset").addEventListener("click", () => { search.value = ""; provider.value = ""; route.value = ""; metric.value = ""; render(); });
+  [search, provider, region, route, metric].forEach((control) => control.addEventListener("input", render));
+  document.querySelector("#reset").addEventListener("click", () => { search.value = ""; provider.value = ""; region.value = ""; route.value = ""; metric.value = ""; render(); });
   render();
 }
 

@@ -15,7 +15,7 @@
         <p class="lede">Source-backed snapshots of cloud-accessible quantum processors. Values retain the QPU, date, source and measurement context needed to interpret them.</p>
         <div class="hero-meta" aria-label="Dataset metadata">
           <span id="card-count">Loading cards…</span>
-          <span>Public observations only</span>
+          <span>Official and user-provided source records</span>
           <span>Updated 2026-10-05</span>
         </div>
       </div>
@@ -30,6 +30,10 @@
         <label>
           <span>Provider</span>
           <select id="provider-filter"><option value="">All providers</option></select>
+        </label>
+        <label>
+          <span>Region</span>
+          <select id="region-filter"><option value="">All regions</option></select>
         </label>
         <label>
           <span>Access route</span>
@@ -59,7 +63,7 @@
       <article class="qpu-card">
         <div class="card-topline">
           <p class="provider"></p>
-          <span class="route"></span>
+          <div class="card-badges"><span class="region"></span><span class="route"></span></div>
         </div>
         <h2></h2>
         <p class="platform"></p>
