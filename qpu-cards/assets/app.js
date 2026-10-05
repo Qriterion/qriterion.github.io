@@ -20,6 +20,7 @@ function createCard(card, sources) {
   const node = template.content.cloneNode(true);
   node.querySelector(".provider").textContent = card.provider;
   node.querySelector(".region").textContent = card.region;
+  node.querySelector(".hardware-type").textContent = card.hardwareType;
   node.querySelector(".route").textContent = card.route;
   node.querySelector("h2").textContent = card.qpu;
   node.querySelector(".platform").textContent = card.platform;
@@ -42,7 +43,7 @@ function createCard(card, sources) {
     detail.className = "detail-item";
     detail.innerHTML = `
       <div class="detail-title"><span>${metric.metric}: ${metricValue(metric)} ${metric.unit}</span><span class="type">${metric.metricClass}</span></div>
-      <p class="detail-meta">As of ${metric.asOf} · ${metric.evidenceType} · ${sourceLabel}</p>
+      <p class="detail-meta">${metric.benchmarkStatus} · As of ${metric.asOf} · ${metric.evidenceType} · ${sourceLabel}</p>
       <p class="detail-note">${metric.note}</p>`;
     details.append(detail);
   });
@@ -50,21 +51,23 @@ function createCard(card, sources) {
 }
 
 async function init() {
-  const response = await fetch("data/qpu-cards.json?v=20261005-3", { cache: "no-store" });
+  const response = await fetch("data/qpu-cards.json?v=20261005-4", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load QPU card data.");
   const { cards, sources } = await response.json();
   const search = document.querySelector("#search");
   const provider = document.querySelector("#provider-filter");
   const region = document.querySelector("#region-filter");
+  const hardware = document.querySelector("#hardware-filter");
   const route = document.querySelector("#route-filter");
-  const metric = document.querySelector("#metric-filter");
+  const benchmark = document.querySelector("#benchmark-filter");
   const cardsEl = document.querySelector("#cards");
   const results = document.querySelector("#results");
 
   populateSelect(provider, cards.map((card) => card.provider));
   populateSelect(region, cards.map((card) => card.region));
+  populateSelect(hardware, cards.map((card) => card.hardwareType));
   populateSelect(route, cards.map((card) => card.route));
-  populateSelect(metric, cards.flatMap((card) => card.metrics.map((item) => item.metricClass)));
+  populateSelect(benchmark, ["Reported Benchmark", "Validated Benchmark"]);
   document.querySelector("#card-count").textContent = `${cards.length} QPU cards · ${cards.reduce((sum, card) => sum + card.metrics.length, 0)} public observations`;
 
   const render = () => {
@@ -74,8 +77,9 @@ async function init() {
       return (!needle || haystack.includes(needle))
         && (!provider.value || card.provider === provider.value)
         && (!region.value || card.region === region.value)
+        && (!hardware.value || card.hardwareType === hardware.value)
         && (!route.value || card.route === route.value)
-        && (!metric.value || card.metrics.some((item) => item.metricClass === metric.value));
+        && (!benchmark.value || card.metrics.some((item) => item.benchmarkStatus === benchmark.value));
     });
     cardsEl.replaceChildren();
     results.textContent = `${shown.length} of ${cards.length} cards shown`;
@@ -86,8 +90,8 @@ async function init() {
     shown.forEach((card) => cardsEl.append(createCard(card, sources)));
   };
 
-  [search, provider, region, route, metric].forEach((control) => control.addEventListener("input", render));
-  document.querySelector("#reset").addEventListener("click", () => { search.value = ""; provider.value = ""; region.value = ""; route.value = ""; metric.value = ""; render(); });
+  [search, provider, region, hardware, route, benchmark].forEach((control) => control.addEventListener("input", render));
+  document.querySelector("#reset").addEventListener("click", () => { search.value = ""; provider.value = ""; region.value = ""; hardware.value = ""; route.value = ""; benchmark.value = ""; render(); });
   render();
 }
 

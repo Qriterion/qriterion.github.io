@@ -85,7 +85,8 @@
           "asOf": "2026-08-01",
           "sourceId": "S18",
           "evidenceType": "Vendor specification",
-          "note": "Heron-family hardware page."
+          "note": "Heron-family hardware page.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Errors per layered gate",
@@ -96,7 +97,8 @@
           "asOf": "2026-08-01",
           "sourceId": "S18",
           "evidenceType": "Vendor specification",
-          "note": "Published as 2.33E-3."
+          "note": "Published as 2.33E-3.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "CLOPS",
@@ -107,10 +109,12 @@
           "asOf": "2026-08-01",
           "sourceId": "S18",
           "evidenceType": "Vendor specification",
-          "note": "Published as 340K."
+          "note": "Published as 340K.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "IBM Quantum",
@@ -127,10 +131,12 @@
           "asOf": "2025-12-31",
           "sourceId": "S19",
           "evidenceType": "Vendor update",
-          "note": "Best EPLG in IBM's Q4 2025 update."
+          "note": "Best EPLG in IBM's Q4 2025 update.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "Quantinuum",
@@ -147,7 +153,8 @@
           "asOf": "2025-11-03",
           "sourceId": "S20",
           "evidenceType": "Vendor update",
-          "note": "33.5 million public claim."
+          "note": "33.5 million public claim.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "QV circuit width",
@@ -158,7 +165,8 @@
           "asOf": "2025-09-08",
           "sourceId": "S07",
           "evidenceType": "Benchmark data",
-          "note": "Published n=25 QV dataset."
+          "note": "Published n=25 QV dataset.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Two-qubit gate fidelity",
@@ -169,10 +177,12 @@
           "asOf": "2025-11-03",
           "sourceId": "S20",
           "evidenceType": "Vendor update",
-          "note": "Greater than 99.9%."
+          "note": "Greater than 99.9%.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Trapped ion"
     },
     {
       "provider": "Quantinuum",
@@ -190,7 +200,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S07",
           "evidenceType": "System benchmark",
-          "note": "56-qubit GHZ; source states no SPAM correction."
+          "note": "56-qubit GHZ; source states no SPAM correction.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "GHZ entangled-state size",
@@ -201,10 +212,12 @@
           "asOf": "2025-01-01",
           "sourceId": "S07",
           "evidenceType": "System benchmark",
-          "note": "Associated with the GHZ-fidelity observation."
+          "note": "Associated with the GHZ-fidelity observation.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Trapped ion"
     },
     {
       "provider": "IonQ",
@@ -221,10 +234,12 @@
           "asOf": "2025-01-01",
           "sourceId": "S21",
           "evidenceType": "Vendor update",
-          "note": "IonQ Forte reported for Amazon Braket."
+          "note": "IonQ Forte reported for Amazon Braket.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Trapped ion"
     },
     {
       "provider": "D-Wave",
@@ -241,7 +256,8 @@
           "asOf": "2024-01-01",
           "sourceId": "S24",
           "evidenceType": "Vendor data sheet",
-          "note": "Prototype stated as 1,200+ qubits."
+          "note": "Prototype stated as 1,200+ qubits.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Time-to-solution acceleration",
@@ -252,10 +268,12 @@
           "asOf": "2024-01-01",
           "sourceId": "S24",
           "evidenceType": "Vendor data sheet",
-          "note": "Problem class and baseline must be read with the cited source."
+          "note": "Problem class and baseline must be read with the cited source.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Quantum annealing"
     },
     {
       "provider": "Rigetti",
@@ -272,7 +290,8 @@
           "asOf": "2025-03-07",
           "sourceId": "S22",
           "evidenceType": "Official filing",
-          "note": "Available to QCS partners."
+          "note": "Available to QCS partners.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median iSWAP 2Q fidelity",
@@ -283,7 +302,8 @@
           "asOf": "2025-03-07",
           "sourceId": "S22",
           "evidenceType": "Official filing",
-          "note": "Internal-testing median."
+          "note": "Internal-testing median.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median fSim 2Q fidelity",
@@ -294,7 +314,8 @@
           "asOf": "2025-03-07",
           "sourceId": "S22",
           "evidenceType": "Official filing",
-          "note": "Internal-testing median."
+          "note": "Internal-testing median.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "iSWAP gate duration",
@@ -305,10 +326,12 @@
           "asOf": "2025-03-07",
           "sourceId": "S22",
           "evidenceType": "Official filing",
-          "note": "Median gate time."
+          "note": "Median gate time.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "IQM",
@@ -325,7 +348,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "Square-lattice superconducting QPU."
+          "note": "Square-lattice superconducting QPU.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median 1Q fidelity",
@@ -336,7 +360,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "Median across qubits."
+          "note": "Median across qubits.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median 2Q fidelity",
@@ -347,7 +372,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "Median across couplers."
+          "note": "Median across couplers.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Quantum Volume",
@@ -358,7 +384,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "QV = 2^5."
+          "note": "QV = 2^5.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "CLOPS",
@@ -369,7 +396,8 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "Reported as CLOPS."
+          "note": "Reported as CLOPS.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Q-score",
@@ -380,10 +408,12 @@
           "asOf": "2025-01-01",
           "sourceId": "S23",
           "evidenceType": "Vendor benchmark page",
-          "note": "Vendor wording: size of combinatorial-optimization task solved."
+          "note": "Vendor wording: size of combinatorial-optimization task solved.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "Europe"
+      "region": "Europe",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "QuEra",
@@ -400,7 +430,8 @@
           "asOf": "2026-10-01",
           "sourceId": "S12",
           "evidenceType": "Vendor page",
-          "note": "Public-cloud scale via Amazon Braket."
+          "note": "Public-cloud scale via Amazon Braket.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Uptime",
@@ -411,7 +442,8 @@
           "asOf": "2026-10-01",
           "sourceId": "S12",
           "evidenceType": "Vendor page",
-          "note": "Reported since November 2022."
+          "note": "Reported since November 2022.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Availability",
@@ -422,10 +454,12 @@
           "asOf": "2026-10-01",
           "sourceId": "S12",
           "evidenceType": "Vendor page",
-          "note": "Reported availability."
+          "note": "Reported availability.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Neutral atom"
     },
     {
       "provider": "QuEra",
@@ -442,7 +476,8 @@
           "asOf": "2026-10-01",
           "sourceId": "S12",
           "evidenceType": "Vendor page",
-          "note": "Retained separately from Aquila."
+          "note": "Retained separately from Aquila.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Physical gate fidelity",
@@ -453,10 +488,12 @@
           "asOf": "2026-10-01",
           "sourceId": "S12",
           "evidenceType": "Vendor page",
-          "note": "Roadmap-table specification."
+          "note": "Roadmap-table specification.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Neutral atom"
     },
     {
       "provider": "Pasqal",
@@ -473,10 +510,12 @@
           "asOf": "2026-04-23",
           "sourceId": "S13",
           "evidenceType": "Cloud target specification",
-          "note": "Azure Quantum public target list."
+          "note": "Azure Quantum public target list.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "Europe"
+      "region": "Europe",
+      "hardwareType": "Neutral atom"
     },
     {
       "provider": "Pasqal",
@@ -493,10 +532,12 @@
           "asOf": "2026-06-01",
           "sourceId": "S25",
           "evidenceType": "Vendor update",
-          "note": "Source does not name the cloud target; do not assume FRESNEL."
+          "note": "Source does not name the cloud target; do not assume FRESNEL.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "Europe"
+      "region": "Europe",
+      "hardwareType": "Neutral atom"
     },
     {
       "provider": "Xanadu",
@@ -513,7 +554,8 @@
           "asOf": "2022-06-01",
           "sourceId": "S14",
           "evidenceType": "Vendor benchmark page",
-          "note": "Gaussian-boson-sampling system."
+          "note": "Gaussian-boson-sampling system.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Per-sample runtime",
@@ -524,7 +566,8 @@
           "asOf": "2022-06-01",
           "sourceId": "S14",
           "evidenceType": "Vendor benchmark page",
-          "note": "Direct-simulation comparison task only."
+          "note": "Direct-simulation comparison task only.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Classical direct-simulation estimate",
@@ -535,7 +578,8 @@
           "asOf": "2022-06-01",
           "sourceId": "S14",
           "evidenceType": "Vendor benchmark page",
-          "note": "Estimate for stated direct-simulation method."
+          "note": "Estimate for stated direct-simulation method.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Claimed runtime advantage",
@@ -546,10 +590,12 @@
           "asOf": "2022-06-01",
           "sourceId": "S14",
           "evidenceType": "Vendor benchmark page",
-          "note": "Relative to earlier photonic demonstrations, per source."
+          "note": "Relative to earlier photonic demonstrations, per source.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Photonic"
     },
     {
       "provider": "Atom Computing",
@@ -566,7 +612,8 @@
           "asOf": "2026-01-01",
           "sourceId": "S15",
           "evidenceType": "Product specification",
-          "note": "Product page states 1,200+."
+          "note": "Product page states 1,200+.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "1Q gate fidelity",
@@ -577,7 +624,8 @@
           "asOf": "2026-01-01",
           "sourceId": "S15",
           "evidenceType": "Product specification",
-          "note": "Product page states >99.9%."
+          "note": "Product page states >99.9%.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "2Q gate fidelity",
@@ -588,7 +636,8 @@
           "asOf": "2026-01-01",
           "sourceId": "S15",
           "evidenceType": "Product specification",
-          "note": "Product page states >99.6%."
+          "note": "Product page states >99.6%.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "SPAM fidelity",
@@ -599,10 +648,12 @@
           "asOf": "2026-01-01",
           "sourceId": "S15",
           "evidenceType": "Product specification",
-          "note": "Product page states >99.8%."
+          "note": "Product page states >99.8%.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Neutral atom"
     },
     {
       "provider": "Origin Quantum",
@@ -619,7 +670,8 @@
           "asOf": "2026-05-07",
           "sourceId": "S16",
           "evidenceType": "Product specification",
-          "note": "Computational/data qubits."
+          "note": "Computational/data qubits.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "T1 coherence time",
@@ -630,7 +682,8 @@
           "asOf": "2026-05-07",
           "sourceId": "S16",
           "evidenceType": "Product specification",
-          "note": "Average / typical as stated by source."
+          "note": "Average / typical as stated by source.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "1Q gate fidelity",
@@ -641,7 +694,8 @@
           "asOf": "2026-05-07",
           "sourceId": "S16",
           "evidenceType": "Product specification",
-          "note": "Average / typical as stated by source."
+          "note": "Average / typical as stated by source.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "2Q gate fidelity",
@@ -652,10 +706,12 @@
           "asOf": "2026-05-07",
           "sourceId": "S16",
           "evidenceType": "Product specification",
-          "note": "Average / typical as stated by source."
+          "note": "Average / typical as stated by source.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "China"
+      "region": "China",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "Microsoft",
@@ -672,10 +728,12 @@
           "asOf": "2026-04-23",
           "sourceId": "S05",
           "evidenceType": "Cloud target specification",
-          "note": "Azure Quantum public target list."
+          "note": "Azure Quantum public target list.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Trapped ion"
     },
     {
       "provider": "Microsoft",
@@ -692,10 +750,12 @@
           "asOf": "2026-04-23",
           "sourceId": "S05",
           "evidenceType": "Cloud target specification",
-          "note": "Azure Quantum public target list."
+          "note": "Azure Quantum public target list.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Trapped ion"
     },
     {
       "provider": "Microsoft",
@@ -712,10 +772,12 @@
           "asOf": "2026-04-23",
           "sourceId": "S05",
           "evidenceType": "Cloud target specification",
-          "note": "Azure Quantum public target list."
+          "note": "Azure Quantum public target list.",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "region": "North America"
+      "region": "North America",
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "KuaFu Quantum",
@@ -733,7 +795,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Count of qubit records in the supplied ScQ-ScQ-P5 calibration export."
+          "note": "Count of qubit records in the supplied ScQ-ScQ-P5 calibration export.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Coupler connections",
@@ -744,7 +807,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Count of non-empty connection records in the supplied calibration export."
+          "note": "Count of non-empty connection records in the supplied calibration export.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean T1 (source label)",
@@ -755,7 +819,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean T2 (source label)",
@@ -766,7 +831,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean anharmonicity (source label)",
@@ -777,7 +843,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean qubit frequency (source label)",
@@ -788,7 +855,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit."
+          "note": "Arithmetic mean of five per-qubit values. The source header does not state a unit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean readout fidelity state0 (source label)",
@@ -799,7 +867,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values."
+          "note": "Arithmetic mean of five per-qubit values.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean readout fidelity state1 (source label)",
@@ -810,7 +879,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values."
+          "note": "Arithmetic mean of five per-qubit values.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean single-qubit gate fidelity (source label)",
@@ -821,7 +891,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of five per-qubit values."
+          "note": "Arithmetic mean of five per-qubit values.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Mean CZ (source label)",
@@ -832,9 +903,11 @@
           "asOf": "2026-10-05",
           "sourceId": "S26",
           "evidenceType": "User-provided source",
-          "note": "Arithmetic mean of four connection values. The source header does not state a unit or protocol."
+          "note": "Arithmetic mean of four connection values. The source header does not state a unit or protocol.",
+          "benchmarkStatus": "Reported Benchmark"
         }
-      ]
+      ],
+      "hardwareType": "Unspecified in source"
     },
     {
       "provider": "LogicBit",
@@ -852,7 +925,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, sequence."
+          "note": "Dashboard topology field; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Coupler count",
@@ -863,7 +937,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, sequence."
+          "note": "Dashboard topology field; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T1 (dashboard label)",
@@ -874,7 +949,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2E (dashboard label)",
@@ -885,7 +961,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2* (dashboard label)",
@@ -896,7 +973,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_SQ (dashboard label)",
@@ -907,7 +985,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_CZ (dashboard label)",
@@ -918,7 +997,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F00 (dashboard label)",
@@ -929,7 +1009,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F11 (dashboard label)",
@@ -940,7 +1021,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, sequence."
+          "note": "Dashboard average; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T1 (dashboard label)",
@@ -951,7 +1033,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2E (dashboard label)",
@@ -962,7 +1045,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2* (dashboard label)",
@@ -973,7 +1057,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_SQ (dashboard label)",
@@ -984,7 +1069,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_CZ (dashboard label)",
@@ -995,7 +1081,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F00 (dashboard label)",
@@ -1006,7 +1093,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F11 (dashboard label)",
@@ -1017,9 +1105,11 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, sequence."
+          "note": "Dashboard median; task types shown: circuit, sequence.",
+          "benchmarkStatus": "Reported Benchmark"
         }
-      ]
+      ],
+      "hardwareType": "Unspecified in source"
     },
     {
       "provider": "LogicBit",
@@ -1037,7 +1127,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, wave."
+          "note": "Dashboard topology field; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Coupler count",
@@ -1048,7 +1139,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, wave."
+          "note": "Dashboard topology field; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T1 (dashboard label)",
@@ -1059,7 +1151,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2E (dashboard label)",
@@ -1070,7 +1163,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2* (dashboard label)",
@@ -1081,7 +1175,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_SQ (dashboard label)",
@@ -1092,7 +1187,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_CZ (dashboard label)",
@@ -1103,7 +1199,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F00 (dashboard label)",
@@ -1114,7 +1211,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F11 (dashboard label)",
@@ -1125,7 +1223,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average Logical error rate (dashboard label)",
@@ -1136,7 +1235,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T1 (dashboard label)",
@@ -1147,7 +1247,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2E (dashboard label)",
@@ -1158,7 +1259,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2* (dashboard label)",
@@ -1169,7 +1271,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_SQ (dashboard label)",
@@ -1180,7 +1283,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_CZ (dashboard label)",
@@ -1191,7 +1295,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F00 (dashboard label)",
@@ -1202,7 +1307,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F11 (dashboard label)",
@@ -1213,9 +1319,11 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         }
-      ]
+      ],
+      "hardwareType": "Unspecified in source"
     },
     {
       "provider": "LogicBit",
@@ -1233,7 +1341,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, wave."
+          "note": "Dashboard topology field; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Coupler count",
@@ -1244,7 +1353,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit, wave."
+          "note": "Dashboard topology field; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T1 (dashboard label)",
@@ -1255,7 +1365,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2E (dashboard label)",
@@ -1266,7 +1377,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2* (dashboard label)",
@@ -1277,7 +1389,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_SQ (dashboard label)",
@@ -1288,7 +1401,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_CZ (dashboard label)",
@@ -1299,7 +1413,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F00 (dashboard label)",
@@ -1310,7 +1425,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F11 (dashboard label)",
@@ -1321,7 +1437,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average Logical error rate (dashboard label)",
@@ -1332,7 +1449,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit, wave."
+          "note": "Dashboard average; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T1 (dashboard label)",
@@ -1343,7 +1461,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2E (dashboard label)",
@@ -1354,7 +1473,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2* (dashboard label)",
@@ -1365,7 +1485,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_SQ (dashboard label)",
@@ -1376,7 +1497,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_CZ (dashboard label)",
@@ -1387,7 +1509,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F00 (dashboard label)",
@@ -1398,7 +1521,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F11 (dashboard label)",
@@ -1409,9 +1533,11 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit, wave."
+          "note": "Dashboard median; task types shown: circuit, wave.",
+          "benchmarkStatus": "Reported Benchmark"
         }
-      ]
+      ],
+      "hardwareType": "Unspecified in source"
     },
     {
       "provider": "LogicBit",
@@ -1429,7 +1555,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit."
+          "note": "Dashboard topology field; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Coupler count",
@@ -1440,7 +1567,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard topology field; task types shown: circuit."
+          "note": "Dashboard topology field; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T1 (dashboard label)",
@@ -1451,7 +1579,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2E (dashboard label)",
@@ -1462,7 +1591,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average T2* (dashboard label)",
@@ -1473,7 +1603,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_SQ (dashboard label)",
@@ -1484,7 +1615,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F_CZ (dashboard label)",
@@ -1495,7 +1627,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F00 (dashboard label)",
@@ -1506,7 +1639,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Average F11 (dashboard label)",
@@ -1517,7 +1651,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard average; task types shown: circuit."
+          "note": "Dashboard average; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T1 (dashboard label)",
@@ -1528,7 +1663,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2E (dashboard label)",
@@ -1539,7 +1675,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median T2* (dashboard label)",
@@ -1550,7 +1687,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_SQ (dashboard label)",
@@ -1561,7 +1699,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F_CZ (dashboard label)",
@@ -1572,7 +1711,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F00 (dashboard label)",
@@ -1583,7 +1723,8 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
         },
         {
           "metric": "Median F11 (dashboard label)",
@@ -1594,7 +1735,483 @@
           "asOf": "2026-10-05",
           "sourceId": "S27",
           "evidenceType": "User-provided screenshot",
-          "note": "Dashboard median; task types shown: circuit."
+          "note": "Dashboard median; task types shown: circuit.",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ],
+      "hardwareType": "Unspecified in source"
+    }
+  ],
+  "leaderboards": [
+    {
+      "id": "reported-qubit-count",
+      "label": "Reported qubit count",
+      "direction": "higher",
+      "explanation": "Higher reported qubit count ranks to the right. This is a scale descriptor, not a universal quality score; source terminology differs by QPU.",
+      "records": [
+        {
+          "qpu": "Heron family",
+          "provider": "IBM Quantum",
+          "region": "North America",
+          "hardwareType": "Superconducting",
+          "value": 156,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S18",
+          "asOf": "2026-08-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Ankaa-3",
+          "provider": "Rigetti",
+          "region": "North America",
+          "hardwareType": "Superconducting",
+          "value": 84,
+          "unit": "qubits",
+          "metric": "Computational qubits",
+          "sourceId": "S22",
+          "asOf": "2025-03-07",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Garnet",
+          "provider": "IQM",
+          "region": "Europe",
+          "hardwareType": "Superconducting",
+          "value": 20,
+          "unit": "qubits",
+          "metric": "Computational qubits",
+          "sourceId": "S23",
+          "asOf": "2025-01-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Aquila",
+          "provider": "QuEra",
+          "region": "North America",
+          "hardwareType": "Neutral atom",
+          "value": 256,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S12",
+          "asOf": "2026-10-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Gemini",
+          "provider": "QuEra",
+          "region": "North America",
+          "hardwareType": "Neutral atom",
+          "value": 260,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S12",
+          "asOf": "2026-10-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "FRESNEL / FRESNEL_CAN1",
+          "provider": "Pasqal",
+          "region": "Europe",
+          "hardwareType": "Neutral atom",
+          "value": 100,
+          "unit": "qubits",
+          "metric": "Qubit count",
+          "sourceId": "S13",
+          "asOf": "2026-04-23",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Borealis",
+          "provider": "Xanadu",
+          "region": "North America",
+          "hardwareType": "Photonic",
+          "value": 216,
+          "unit": "qubits",
+          "metric": "Squeezed-state qubits",
+          "sourceId": "S14",
+          "asOf": "2022-06-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Wukong 180",
+          "provider": "Origin Quantum",
+          "region": "China",
+          "hardwareType": "Superconducting",
+          "value": 180,
+          "unit": "qubits",
+          "metric": "Data qubits",
+          "sourceId": "S16",
+          "asOf": "2026-05-07",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "IonQ Aria 1",
+          "provider": "Microsoft",
+          "region": "North America",
+          "hardwareType": "Trapped ion",
+          "value": 25,
+          "unit": "qubits",
+          "metric": "Target qubit count",
+          "sourceId": "S05",
+          "asOf": "2026-04-23",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "IonQ Forte 1",
+          "provider": "Microsoft",
+          "region": "North America",
+          "hardwareType": "Trapped ion",
+          "value": 36,
+          "unit": "qubits",
+          "metric": "Target qubit count",
+          "sourceId": "S05",
+          "asOf": "2026-04-23",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Rigetti Cepheus-1-108Q",
+          "provider": "Microsoft",
+          "region": "North America",
+          "hardwareType": "Superconducting",
+          "value": 108,
+          "unit": "qubits",
+          "metric": "Target qubit count",
+          "sourceId": "S05",
+          "asOf": "2026-04-23",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "ScQ-ScQ-P5",
+          "provider": "KuaFu Quantum",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 5,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S26",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "MQ02",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 24,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-surface_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 17,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-repetition_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 17,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "AGate-100",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 101,
+          "unit": "qubits",
+          "metric": "Physical qubits",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "quantum-volume",
+      "label": "Quantum Volume",
+      "direction": "higher",
+      "explanation": "Higher Quantum Volume ranks to the right. Compare only implementations using the stated Quantum Volume protocol and confidence criterion.",
+      "records": [
+        {
+          "qpu": "H2-2",
+          "provider": "Quantinuum",
+          "region": "North America",
+          "hardwareType": "Trapped ion",
+          "value": 33554432,
+          "unit": "QV (2^25)",
+          "metric": "Quantum Volume",
+          "sourceId": "S20",
+          "asOf": "2025-11-03",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Garnet",
+          "provider": "IQM",
+          "region": "Europe",
+          "hardwareType": "Superconducting",
+          "value": 32,
+          "unit": "QV",
+          "metric": "Quantum Volume",
+          "sourceId": "S23",
+          "asOf": "2025-01-01",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "clops",
+      "label": "CLOPS",
+      "direction": "higher",
+      "explanation": "Higher Circuit Layer Operations Per Second ranks to the right. Compare only matching CLOPS methodology and workload configuration.",
+      "records": [
+        {
+          "qpu": "Heron family",
+          "provider": "IBM Quantum",
+          "region": "North America",
+          "hardwareType": "Superconducting",
+          "value": 340000,
+          "unit": "layers/s",
+          "metric": "CLOPS",
+          "sourceId": "S18",
+          "asOf": "2026-08-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Garnet",
+          "provider": "IQM",
+          "region": "Europe",
+          "hardwareType": "Superconducting",
+          "value": 2600,
+          "unit": "layers/s",
+          "metric": "CLOPS",
+          "sourceId": "S23",
+          "asOf": "2025-01-01",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "reported-1q-fidelity",
+      "label": "Reported 1Q gate fidelity",
+      "direction": "higher",
+      "explanation": "Higher reported 1Q gate fidelity ranks to the right. Calibration and aggregation procedures can differ between vendors.",
+      "records": [
+        {
+          "qpu": "Garnet",
+          "provider": "IQM",
+          "region": "Europe",
+          "hardwareType": "Superconducting",
+          "value": 99.92,
+          "unit": "%",
+          "metric": "Median 1Q fidelity",
+          "sourceId": "S23",
+          "asOf": "2025-01-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Wukong 180",
+          "provider": "Origin Quantum",
+          "region": "China",
+          "hardwareType": "Superconducting",
+          "value": 99.9,
+          "unit": "%",
+          "metric": "1Q gate fidelity",
+          "sourceId": "S16",
+          "asOf": "2026-05-07",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "reported-2q-fidelity",
+      "label": "Reported 2Q gate fidelity",
+      "direction": "higher",
+      "explanation": "Higher reported 2Q gate fidelity ranks to the right. Gate family and characterization method must be checked before interpreting close values.",
+      "records": [
+        {
+          "qpu": "Garnet",
+          "provider": "IQM",
+          "region": "Europe",
+          "hardwareType": "Superconducting",
+          "value": 99.51,
+          "unit": "%",
+          "metric": "Median 2Q fidelity",
+          "sourceId": "S23",
+          "asOf": "2025-01-01",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "Wukong 180",
+          "provider": "Origin Quantum",
+          "region": "China",
+          "hardwareType": "Superconducting",
+          "value": 99,
+          "unit": "%",
+          "metric": "2Q gate fidelity",
+          "sourceId": "S16",
+          "asOf": "2026-05-07",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "logicbit-average-fsq",
+      "label": "LogicBit average F_SQ",
+      "direction": "higher",
+      "explanation": "Higher dashboard-reported average F_SQ ranks to the right. This comparison is limited to targets reporting this same dashboard label.",
+      "records": [
+        {
+          "qpu": "MQ02",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.947,
+          "unit": "%",
+          "metric": "Average F_SQ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-surface_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.93,
+          "unit": "%",
+          "metric": "Average F_SQ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-repetition_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.929,
+          "unit": "%",
+          "metric": "Average F_SQ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "AGate-100",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.917,
+          "unit": "%",
+          "metric": "Average F_SQ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "logicbit-average-fcz",
+      "label": "LogicBit average F_CZ",
+      "direction": "higher",
+      "explanation": "Higher dashboard-reported average F_CZ ranks to the right. This comparison is limited to targets reporting this same dashboard label.",
+      "records": [
+        {
+          "qpu": "MQ02",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.607,
+          "unit": "%",
+          "metric": "Average F_CZ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-surface_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.458,
+          "unit": "%",
+          "metric": "Average F_CZ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-repetition_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.448,
+          "unit": "%",
+          "metric": "Average F_CZ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "AGate-100",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 99.281,
+          "unit": "%",
+          "metric": "Average F_CZ (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        }
+      ]
+    },
+    {
+      "id": "logicbit-logical-error-rate",
+      "label": "LogicBit average logical error rate",
+      "direction": "lower",
+      "explanation": "Lower dashboard-reported logical error rate ranks to the right. Interpret only with the code, task and protocol settings that accompany the dashboard value.",
+      "records": [
+        {
+          "qpu": "QZ01-surface_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 0.04,
+          "unit": "probability",
+          "metric": "Average Logical error rate (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
+        },
+        {
+          "qpu": "QZ01-repetition_code",
+          "provider": "LogicBit",
+          "region": "China",
+          "hardwareType": "Unspecified in source",
+          "value": 0.00046,
+          "unit": "probability",
+          "metric": "Average Logical error rate (dashboard label)",
+          "sourceId": "S27",
+          "asOf": "2026-10-05",
+          "benchmarkStatus": "Reported Benchmark"
         }
       ]
     }

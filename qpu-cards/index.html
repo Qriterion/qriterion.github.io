@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Source-backed QPU cards generated from the QCVV quantum cloud benchmarking dataset." />
     <title>QPU Cards · QCVV</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20261005-3" />
+    <link rel="stylesheet" href="assets/styles.css?v=20261005-4" />
   </head>
   <body>
     <header class="site-header">
@@ -13,6 +13,7 @@
         <p class="eyebrow">QCVV · public benchmark observations</p>
         <h1>QPU Cards</h1>
         <p class="lede">Source-backed snapshots of cloud-accessible quantum processors. Values retain the QPU, date, source and measurement context needed to interpret them.</p>
+        <nav class="site-nav" aria-label="Site navigation"><a aria-current="page" href="index.html">QPU Cards</a><a href="leaderboard.html">Leaderboard</a></nav>
         <div class="hero-meta" aria-label="Dataset metadata">
           <span id="card-count">Loading cards…</span>
           <span>Official and user-provided source records</span>
@@ -36,12 +37,16 @@
           <select id="region-filter"><option value="">All regions</option></select>
         </label>
         <label>
+          <span>Hardware type</span>
+          <select id="hardware-filter"><option value="">All hardware types</option></select>
+        </label>
+        <label>
           <span>Access route</span>
           <select id="route-filter"><option value="">All routes</option></select>
         </label>
         <label>
-          <span>Metric type</span>
-          <select id="metric-filter"><option value="">All metric types</option></select>
+          <span>Benchmark</span>
+          <select id="benchmark-filter"><option value="">All benchmark evidence</option></select>
         </label>
         <button id="reset" type="button" class="secondary">Reset filters</button>
       </section>
@@ -54,6 +59,7 @@
         <ul>
           <li><strong>Benchmark</strong> means a stated workload and protocol produces a result. Compare only identical protocols.</li>
           <li><strong>Vendor metric</strong> and <strong>capability descriptor</strong> are retained, but are not universal ranking scores.</li>
+          <li><strong>Reported Benchmark</strong> is vendor-provided data. <strong>Validated Benchmark</strong> is a result QCVV has independently verified.</li>
           <li><strong>Comparator</strong> keeps source language such as <code>&gt;</code>; it is not silently changed into an exact value.</li>
         </ul>
       </section>
@@ -63,7 +69,7 @@
       <article class="qpu-card">
         <div class="card-topline">
           <p class="provider"></p>
-          <div class="card-badges"><span class="region"></span><span class="route"></span></div>
+          <div class="card-badges"><span class="region"></span><span class="hardware-type"></span><span class="route"></span></div>
         </div>
         <h2></h2>
         <p class="platform"></p>
@@ -75,6 +81,6 @@
         </details>
       </article>
     </template>
-    <script src="assets/app.js?v=20261005-3" defer></script>
+    <script src="assets/app.js?v=20261005-4" defer></script>
   </body>
 </html>

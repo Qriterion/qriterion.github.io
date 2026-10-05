@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="QPU leaderboard views generated from the QCVV source-backed benchmarking dataset." />
+    <title>Leaderboard · QCVV</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20261005-4" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap hero">
+        <p class="eyebrow">QCVV · ranked metric views</p>
+        <h1>Leaderboard</h1>
+        <p class="lede">Choose a metric to compare only the QPUs reporting that metric. Bars are ordered from less favourable on the left to more favourable on the right.</p>
+        <nav class="site-nav" aria-label="Site navigation"><a href="index.html">QPU Cards</a><a aria-current="page" href="leaderboard.html">Leaderboard</a></nav>
+      </div>
+    </header>
+
+    <main class="wrap leaderboard-main">
+      <section class="leaderboard-controls" aria-label="Leaderboard filters">
+        <label><span>Metric</span><select id="leaderboard-metric"></select></label>
+        <label><span>Region</span><select id="leaderboard-region"><option value="">All regions</option></select></label>
+        <label><span>Hardware type</span><select id="leaderboard-hardware"><option value="">All hardware types</option></select></label>
+      </section>
+
+      <section class="metric-explainer" aria-live="polite">
+        <p class="eyebrow">Metric interpretation</p>
+        <h2 id="metric-title">Loading metric…</h2>
+        <p id="metric-direction" class="direction"></p>
+        <p id="metric-explanation"></p>
+      </section>
+
+      <section class="chart-panel" aria-labelledby="chart-title">
+        <div class="chart-topline"><h2 id="chart-title">QPU comparison</h2><p id="chart-summary"></p></div>
+        <div class="ranking-direction"><span>Less favourable</span><span>More favourable →</span></div>
+        <div id="leaderboard-chart" class="leaderboard-chart" aria-live="polite"></div>
+      </section>
+
+      <section class="method" aria-labelledby="leaderboard-method-title">
+        <h2 id="leaderboard-method-title">How to read the leaderboard</h2>
+        <ul>
+          <li>Position, not bar height alone, indicates the ranking: the rightmost QPU is most favourable under the stated direction.</li>
+          <li>Only QPUs with a directly reported value for the selected metric are included.</li>
+          <li>Reported Benchmark values are vendor-provided. Validated Benchmark values are independently verified by QCVV.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="assets/leaderboard.js?v=20261005-4" defer></script>
+  </body>
+</html>
