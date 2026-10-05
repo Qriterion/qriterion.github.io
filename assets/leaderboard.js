@@ -22,7 +22,7 @@ function createBar(record, height) {
 }
 
 async function init() {
-  const response = await fetch("data/qpu-cards.json?v=20261005-6", { cache: "no-store" });
+  const response = await fetch("data/qpu-cards.json?v=20261005-7", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load leaderboard data.");
   const { leaderboards } = await response.json();
   const evidenceSelect = document.querySelector("#leaderboard-evidence");
