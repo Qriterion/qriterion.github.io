@@ -907,7 +907,7 @@
           "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "hardwareType": "Unspecified in source"
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "LogicBit",
@@ -1109,7 +1109,7 @@
           "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "hardwareType": "Unspecified in source"
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "LogicBit",
@@ -1323,7 +1323,7 @@
           "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "hardwareType": "Unspecified in source"
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "LogicBit",
@@ -1537,7 +1537,7 @@
           "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "hardwareType": "Unspecified in source"
+      "hardwareType": "Superconducting"
     },
     {
       "provider": "LogicBit",
@@ -1739,7 +1739,7 @@
           "benchmarkStatus": "Reported Benchmark"
         }
       ],
-      "hardwareType": "Unspecified in source"
+      "hardwareType": "Superconducting"
     }
   ],
   "leaderboards": [
@@ -1885,7 +1885,7 @@
           "qpu": "ScQ-ScQ-P5",
           "provider": "KuaFu Quantum",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 5,
           "unit": "qubits",
           "metric": "Physical qubits",
@@ -1897,7 +1897,7 @@
           "qpu": "MQ02",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 24,
           "unit": "qubits",
           "metric": "Physical qubits",
@@ -1909,7 +1909,7 @@
           "qpu": "QZ01-surface_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 17,
           "unit": "qubits",
           "metric": "Physical qubits",
@@ -1921,7 +1921,7 @@
           "qpu": "QZ01-repetition_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 17,
           "unit": "qubits",
           "metric": "Physical qubits",
@@ -1933,7 +1933,7 @@
           "qpu": "AGate-100",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 101,
           "unit": "qubits",
           "metric": "Physical qubits",
@@ -2081,7 +2081,7 @@
           "qpu": "MQ02",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.947,
           "unit": "%",
           "metric": "Average F_SQ (dashboard label)",
@@ -2093,7 +2093,7 @@
           "qpu": "QZ01-surface_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.93,
           "unit": "%",
           "metric": "Average F_SQ (dashboard label)",
@@ -2105,7 +2105,7 @@
           "qpu": "QZ01-repetition_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.929,
           "unit": "%",
           "metric": "Average F_SQ (dashboard label)",
@@ -2117,7 +2117,7 @@
           "qpu": "AGate-100",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.917,
           "unit": "%",
           "metric": "Average F_SQ (dashboard label)",
@@ -2137,7 +2137,7 @@
           "qpu": "MQ02",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.607,
           "unit": "%",
           "metric": "Average F_CZ (dashboard label)",
@@ -2149,7 +2149,7 @@
           "qpu": "QZ01-surface_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.458,
           "unit": "%",
           "metric": "Average F_CZ (dashboard label)",
@@ -2161,7 +2161,7 @@
           "qpu": "QZ01-repetition_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.448,
           "unit": "%",
           "metric": "Average F_CZ (dashboard label)",
@@ -2173,7 +2173,7 @@
           "qpu": "AGate-100",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 99.281,
           "unit": "%",
           "metric": "Average F_CZ (dashboard label)",
@@ -2193,7 +2193,7 @@
           "qpu": "QZ01-surface_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 0.04,
           "unit": "probability",
           "metric": "Average Logical error rate (dashboard label)",
@@ -2205,7 +2205,7 @@
           "qpu": "QZ01-repetition_code",
           "provider": "LogicBit",
           "region": "China",
-          "hardwareType": "Unspecified in source",
+          "hardwareType": "Superconducting",
           "value": 0.00046,
           "unit": "probability",
           "metric": "Average Logical error rate (dashboard label)",
