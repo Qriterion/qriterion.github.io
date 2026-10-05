@@ -3,85 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Source-backed QPU cards generated from the QCVV quantum cloud benchmarking dataset." />
-    <title>QPU Cards · Qriterion</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20261005-6" />
+    <meta name="description" content="Qriterion makes quantum performance transparent, comparable and trustworthy." />
+    <title>Qriterion · Quantum performance, made legible</title>
+    <link rel="stylesheet" href="assets/landing.css?v=20261005-2" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap hero">
-        <a class="cards-brand" href="../" aria-label="Qriterion home"><img src="assets/icon.png" alt="" /><span>Qriterion</span></a>
-        <p class="eyebrow">QCVV · public benchmark observations</p>
-        <h1>QPU Cards</h1>
-        <p class="lede">Source-backed snapshots of cloud-accessible quantum processors. Values retain the QPU, date, source and measurement context needed to interpret them.</p>
-        <nav class="site-nav" aria-label="Site navigation"><a href="../">Qriterion home</a><a aria-current="page" href="index.html">QPU Cards</a><a href="leaderboard.html">Leaderboard</a><a href="../docs.html">Docs</a><a href="../products.html">Products</a></nav>
-        <div class="hero-meta" aria-label="Dataset metadata">
-          <span id="card-count">Loading cards…</span>
-          <span>Official and user-provided source records</span>
-          <span>Updated 2026-10-05</span>
+    <header class="masthead">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="./" aria-label="Qriterion home"><span class="brand-mark"><img src="assets/icon.png" alt="" /></span><span>Qriterion</span></a>
+        <div class="nav-links"><a href="qpu-cards.html">QPU Cards</a><a href="docs.html">Docs</a><a href="products.html">Products</a><a class="nav-cta" href="#contact">Contact</a></div>
+      </nav>
+      <section class="hero shell">
+        <div>
+          <p class="eyebrow">Quantum performance intelligence</p>
+          <h1>Make quantum performance legible.</h1>
+          <p class="hero-copy">Qriterion turns fragmented QPU claims into transparent, comparable evidence—so teams can make sound decisions about quantum hardware.</p>
+          <div class="cta-row"><a class="button button-dark" href="qpu-cards.html">Explore QPU Cards <span aria-hidden="true">→</span></a><a class="button button-light" href="#mission">Our mission</a></div>
+          <p class="hero-note">Independent context for the quantum systems shaping what comes next.</p>
         </div>
-      </div>
+        <aside class="signal-card" aria-label="Qriterion benchmark signal preview"><div class="signal-card-top"><span>QPU signal</span><span class="live-dot">Open data</span></div><div class="signal-grid"><div class="signal-main"><span>Evidence, not hype</span><h2>QPU Cards</h2><p>Metrics with source, QPU, date and measurement context intact.</p><div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="signal-stat"><strong>Reported</strong><span>vendor-supplied observations</span></div><div class="signal-stat"><strong>Validated</strong><span>independently checked results</span></div></div></aside>
+      </section>
     </header>
-
-    <main class="wrap">
-      <section class="controls" aria-label="Filter QPU cards">
-        <label>
-          <span>Search</span>
-          <input id="search" type="search" placeholder="QPU, provider or metric" autocomplete="off" />
-        </label>
-        <label>
-          <span>Provider</span>
-          <select id="provider-filter"><option value="">All providers</option></select>
-        </label>
-        <label>
-          <span>Region</span>
-          <select id="region-filter"><option value="">All regions</option></select>
-        </label>
-        <label>
-          <span>Hardware type</span>
-          <select id="hardware-filter"><option value="">All hardware types</option></select>
-        </label>
-        <label>
-          <span>Access route</span>
-          <select id="route-filter"><option value="">All routes</option></select>
-        </label>
-        <label>
-          <span>Benchmark</span>
-          <select id="benchmark-filter"><option value="">All benchmark evidence</option></select>
-        </label>
-        <button id="reset" type="button" class="secondary">Reset filters</button>
-      </section>
-
-      <p id="results" class="results" aria-live="polite"></p>
-      <section id="cards" class="cards" aria-label="QPU cards"></section>
-
-      <section class="method" aria-labelledby="method-title">
-        <h2 id="method-title">How to read these cards</h2>
-        <ul>
-          <li><strong>Benchmark</strong> means a stated workload and protocol produces a result. Compare only identical protocols.</li>
-          <li><strong>Vendor metric</strong> and <strong>capability descriptor</strong> are retained, but are not universal ranking scores.</li>
-          <li><strong>Reported Benchmark</strong> is vendor-provided data. <strong>Validated Benchmark</strong> is a standardized, documented physical-hardware result; it is not a Qriterion rerun.</li>
-          <li><strong>Comparator</strong> keeps source language such as <code>&gt;</code>; it is not silently changed into an exact value.</li>
-        </ul>
-      </section>
+    <section class="proof"><div class="shell"><p>Built for a more accountable quantum ecosystem.</p><div class="proof-list"><span>Source-aware metrics</span><span>Protocol context</span><span>Comparable evidence</span></div></div></section>
+    <main>
+      <section id="mission" class="section shell"><div class="section-heading"><div><span class="pill">Our vision</span><h2>Trust is quantum infrastructure.</h2></div><p>Quantum hardware is advancing quickly, but performance claims are hard to compare across platforms, protocols and moments in time. We make the underlying evidence clear enough to use.</p></div><div class="mission-grid"><article class="mission-card"><span class="number">01 / Transparent</span><h3>Expose the context</h3><p>Every observation should travel with its source, target QPU, reporting date and measurement conditions.</p></article><article class="mission-card"><span class="number">02 / Comparable</span><h3>Compare with care</h3><p>We organize metrics without pretending that unlike protocols are interchangeable ranking scores.</p></article><article class="mission-card"><span class="number">03 / Verifiable</span><h3>Raise the bar</h3><p>Reported data and independently validated results are visibly distinguished—so confidence is earned, not assumed.</p></article></div></section>
+      <section class="section section-tint"><div class="shell product-showcase"><div class="product-copy"><span class="pill">What we do</span><h2>Decision-grade quantum hardware intelligence.</h2><p>From public performance observations to validation-ready benchmarking, Qriterion helps researchers, builders and decision-makers see what a quantum processor can actually support.</p><a class="button" href="qpu-cards.html">Browse the QPU Cards</a></div><div class="product-list"><article class="product-item"><span class="product-icon">◫</span><div><h3>QPU Cards</h3><p>Structured, source-backed snapshots of cloud-accessible quantum processors and their reported metrics.</p></div></article><article class="product-item"><span class="product-icon">↗</span><div><h3>Benchmark leadership</h3><p>Metric-specific views that make the direction, scope and limits of a comparison explicit.</p></div></article><article class="product-item"><span class="product-icon">✓</span><div><h3>Validation framework</h3><p>A path from vendor-reported observations to reproducible, independently verified performance evidence.</p></div></article></div></div></section>
+      <section id="contact" class="contact"><div class="shell contact-inner"><div><span class="pill">Stay in the loop</span><h2>Help set a higher standard for quantum performance.</h2><p>Questions, partnerships, data corrections or early product conversations—we would like to hear from you.</p></div><div class="contact-actions"><a class="button" href="mailto:contact@qriterion.io?subject=Qriterion%20enquiry">Contact us</a><a class="button" href="mailto:contact@qriterion.io?subject=Newsletter%20subscription">Subscribe to the newsletter</a><a class="mail" href="mailto:contact@qriterion.io">contact@qriterion.io</a></div></div></section>
     </main>
-
-    <template id="card-template">
-      <article class="qpu-card">
-        <div class="card-topline">
-          <div><p class="provider"></p><span class="benchmark-status"></span></div>
-          <div class="card-badges"><span class="region"></span><span class="hardware-type"></span><span class="route"></span></div>
-        </div>
-        <h2></h2>
-        <p class="platform"></p>
-        <dl class="metric-grid"></dl>
-        <p class="asof"></p>
-        <details>
-          <summary>Metric details and sources</summary>
-          <div class="detail-list"></div>
-        </details>
-      </article>
-    </template>
-    <script src="assets/app.js?v=20261005-6" defer></script>
+    <footer class="footer"><div class="shell"><span>© 2026 Qriterion. Quantum performance, made legible.</span><a href="qpu-cards.html">Explore QPU Cards →</a></div></footer>
   </body>
 </html>
