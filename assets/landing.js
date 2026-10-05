@@ -46,4 +46,4 @@ function setLanguage(language) {
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
-setLanguage(localStorage.getItem("qriterion-language") || "zh");
+setLanguage("zh");
