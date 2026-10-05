@@ -4,7 +4,7 @@ const copy = {
     eyebrow: "Independent quantum benchmarking", heroTitle: "Quantum performance,<br />beyond vendor claims.",
     heroPromise: "Independent, task-oriented and traceable performance benchmarks for quantum computing—so procurement, investment, policy and real-world use no longer rely on vendor claims alone.",
     heroCopy: "We make complex QPU systems legible in the context that matters: the task, the evidence, the cost and the time to a useful result.", ctaCards: "Explore QPU Cards", ctaValue: "See how it works",
-    signalLabel: "From claim to evidence", signalLive: "Traceable", signalKicker: "The question we answer", signalHeading: "Which QPU fits this task?", signalText: "Not the biggest number. The best evidence for a specific workload, under real constraints.", reported: "Reported", reportedText: "what vendors state", validated: "Validated", validatedText: "what evidence supports",
+    signalLabel: "From claim to evidence", signalLive: "Traceable", signalKicker: "The question we need to answer", signalHeading: "Can these performance metrics be trusted?", signalText: "Not whose metrics look prettier, but whose metrics are credible, auditable and comparable.", reported: "Reported", reportedText: "what vendors state", validated: "Validated", validatedText: "what evidence supports",
     proofLead: "A neutral layer for a growing quantum market.", proofOne: "Independent protocols", proofTwo: "Task-level evidence", proofThree: "Longitudinal data",
     valueEyebrow: "Three layers of value", valueTitle: "A trusted path from performance data to better decisions.", valueIntro: "Qriterion creates a common language between quantum hardware makers and the people who need to choose, fund, govern and use their systems.",
     layerOneKind: "Evidence layer", layerOneTitle: "Independent performance facts", layerOneText: "We turn fragmented QPU claims into source-backed, reproducible observations—with the hardware, protocol, date and conditions left intact.", layerOneItemOne: "Comparable benchmark suites", layerOneItemTwo: "Reported vs. validated evidence", layerOneItemThree: "Performance tracked over time",
@@ -19,7 +19,7 @@ const copy = {
     eyebrow: "独立量子性能评测", heroTitle: "让量子性能，<br />有据可循。",
     heroPromise: "为量子计算提供独立、任务导向、可追溯的性能基准，让采购、投资、政策和实际使用不再依赖厂商自述。",
     heroCopy: "面对同一项任务，不同 QPU 的表现、成本和完成时间都可能不同。我们提供足够客观的信息，让选择有依据。", ctaCards: "浏览 QPU Cards", ctaValue: "了解我们的方式",
-    signalLabel: "从宣传到证据", signalLive: "可追溯", signalKicker: "我们真正要回答的问题", signalHeading: "这项任务，应该交给哪一台 QPU？", signalText: "不是谁的参数更大，而是谁能在真实约束下把任务完成得更好。", reported: "厂商报告", reportedText: "厂商公开的数据", validated: "独立验证", validatedText: "有证据支撑的结果",
+    signalLabel: "从宣传到证据", signalLive: "可追溯", signalKicker: "我们真正要回答的问题", signalHeading: "这些性能指标，值得相信吗？", signalText: "不是谁的指标更漂亮，而是谁的指标可信、可审查、可比较。", reported: "厂商报告", reportedText: "厂商公开的数据", validated: "独立验证", validatedText: "有证据支撑的结果",
     proofLead: "为量子计算市场建立可信的中立基础层。", proofOne: "独立测试协议", proofTwo: "任务级证据", proofThree: "长期性能追踪",
     valueEyebrow: "三层价值", valueTitle: "从性能数据，到真正能落地的决策。", valueIntro: "Qriterion 在硬件厂商与采购者、投资人、政策制定者和终端用户之间，建立一套可验证、可沟通的共同语言。",
     layerOneKind: "性能事实层", layerOneTitle: "独立的性能事实层", layerOneText: "不只记录比特数或保真度，而是还原一台 QPU 在什么条件下、用什么协议、完成了什么任务。", layerOneItemOne: "统一、可比较的基准套件", layerOneItemTwo: "明确区分厂商报告与独立验证", layerOneItemThree: "持续追踪性能随时间的变化",
@@ -46,4 +46,4 @@ function setLanguage(language) {
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
-setLanguage(localStorage.getItem("qriterion-language") || "en");
+setLanguage(localStorage.getItem("qriterion-language") || "zh");
