@@ -50,7 +50,7 @@ function createCard(card, sources) {
 }
 
 async function init() {
-  const response = await fetch("data/qpu-cards.json");
+  const response = await fetch("data/qpu-cards.json?v=20261005-3", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load QPU card data.");
   const { cards, sources } = await response.json();
   const search = document.querySelector("#search");
