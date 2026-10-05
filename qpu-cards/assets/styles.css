@@ -19,6 +19,8 @@ body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inte
 .wrap { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
 .site-header { color: #fff; background: linear-gradient(122deg, #102b4d, #175a72); border-bottom: 5px solid #7ec7df; }
 .hero { padding: 3.4rem 0 2.8rem; }
+.cards-brand { display: inline-flex; align-items: center; gap: .48rem; margin-bottom: 1.45rem; color: #fff; font-size: .95rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
+.cards-brand img { width: 34px; height: 34px; padding: 2px; object-fit: contain; background: #fff; border-radius: 50%; }
 .eyebrow { margin: 0 0 .4rem; font-size: .78rem; letter-spacing: .12em; font-weight: 750; text-transform: uppercase; color: #bfe8f3; }
 h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1; letter-spacing: -.03em; }
 .lede { max-width: 720px; margin: 1rem 0 0; font-size: 1.1rem; color: #deedf5; }

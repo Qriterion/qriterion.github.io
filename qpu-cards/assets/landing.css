@@ -20,7 +20,8 @@ a { color: inherit; }
 .masthead::after { position: absolute; z-index: 0; right: -11rem; bottom: -15rem; width: 40rem; height: 40rem; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffd36e 0 8%, #ff956a 26%, #875aff 58%, transparent 70%); content: ""; filter: blur(2px); opacity: .94; }
 .nav { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 76px; }
 .brand { display: inline-flex; align-items: center; gap: .62rem; font-weight: 850; letter-spacing: -.035em; text-decoration: none; font-size: 1.15rem; }
-.brand-mark { display: grid; width: 32px; height: 32px; place-items: center; color: #fff; background: var(--night); border-radius: 9px; font-size: .98rem; font-weight: 900; letter-spacing: -.08em; }
+.brand-mark { display: block; width: 32px; height: 32px; }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .nav-links { display: flex; align-items: center; gap: .25rem; }
 .nav-links a { padding: .5rem .68rem; border-radius: 9px; color: #354158; font-size: .9rem; font-weight: 720; text-decoration: none; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--night); background: #edf0f6; }
