@@ -1,6 +1,6 @@
 const copy = {
   en: {
-    navValue: "Why Qriterion", navFuture: "Future Aim", navContact: "Contact",
+    navValue: "Why Qriterion", navDocs: "Docs", navProducts: "Products", navFuture: "Future Aim", navContact: "Contact",
     eyebrow: "Independent quantum benchmarking", heroTitle: "Quantum performance,<br />beyond vendor claims.",
     heroPromise: "Independent, task-oriented and traceable performance benchmarks for quantum computing—so procurement, investment, policy and real-world use no longer rely on vendor claims alone.",
     heroCopy: "We make complex QPU systems legible in the context that matters: the task, the evidence, the cost and the time to a useful result.", ctaCards: "Explore QPU Cards", ctaValue: "See how it works",
@@ -15,7 +15,7 @@ const copy = {
     contactEyebrow: "Build the standard with us", contactTitle: "Better quantum decisions start with better evidence.", contactText: "We are looking for hardware partners, early users, researchers and institutions who believe performance claims should be independently legible.", contactCta: "Start a conversation", footer: "© 2026 Qriterion. Independent quantum performance intelligence.", footerLink: "Explore QPU Cards"
   },
   zh: {
-    navValue: "我们的价值", navFuture: "未来目标", navContact: "联系我们",
+    navValue: "我们的价值", navDocs: "文档", navProducts: "产品", navFuture: "未来目标", navContact: "联系我们",
     eyebrow: "独立量子性能评测", heroTitle: "让量子性能，<br />有据可循。",
     heroPromise: "为量子计算提供独立、任务导向、可追溯的性能基准，让采购、投资、政策和实际使用不再依赖厂商自述。",
     heroCopy: "面对同一项任务，不同 QPU 的表现、成本和完成时间都可能不同。我们提供足够客观的信息，让选择有依据。", ctaCards: "浏览 QPU Cards", ctaValue: "了解我们的方式",
