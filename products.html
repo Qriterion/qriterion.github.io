@@ -1,3 +1,77 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Products · Qriterion</title><link rel="stylesheet" href="assets/landing.css?v=20261005-2" /></head>
-<body class="simple-page"><header class="masthead"><nav class="nav shell" aria-label="Primary navigation"><a class="brand" href="./"><span class="brand-mark"><img src="assets/icon.png" alt="" /></span><span>Qriterion</span></a><div class="nav-links"><a href="qpu-cards.html">QPU Cards</a><a href="docs.html">Docs</a><a aria-current="page" href="products.html">Products</a></div></nav></header><main class="placeholder shell"><section class="placeholder-card"><span class="pill">Coming soon</span><h1>Products</h1><p>Qriterion products for quantum hardware intelligence will be introduced here.</p></section></main><footer class="footer"><div class="shell"><span>© 2026 Qriterion</span><a href="./">Home</a></div></footer></body></html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Qriterion products: open benchmarking, independent QPU verification, performance intelligence and future quantum routing." />
+    <title>Products · Qriterion</title>
+    <link rel="stylesheet" href="assets/landing.css?v=20261005-2" />
+    <link rel="stylesheet" href="assets/products.css?v=20261005-1" />
+  </head>
+  <body class="products-page">
+    <header class="masthead products-masthead">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="./" aria-label="Qriterion home"><span class="brand-mark"><img src="assets/icon.png" alt="" /></span><span>Qriterion</span></a>
+        <div class="nav-links">
+          <a href="qpu-cards.html">QPU Cards</a>
+          <a href="docs.html" data-i18n="navDocs">文档</a>
+          <a aria-current="page" href="products.html" data-i18n="navProducts">产品</a>
+          <a class="nav-cta" href="#contact" data-i18n="navContact">联系我们</a>
+          <div class="language-switch" role="group" aria-label="Language selector">
+            <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button><span aria-hidden="true">｜</span><button type="button" class="language-button is-active" data-language="zh" aria-pressed="true">中文</button>
+          </div>
+        </div>
+      </nav>
+      <section class="products-hero shell">
+        <p class="eyebrow" data-i18n="heroEyebrow">产品体系</p>
+        <h1 data-i18n="heroTitle">从量子性能声明，<br />到决策级证据。</h1>
+        <p class="hero-promise" data-i18n="heroLead">Qriterion 为量子硬件建立独立的测量、验证与数据基础设施，让每一项性能主张都可追溯、可审查、可比较。</p>
+        <div class="cta-row"><a class="button button-dark" href="#products" data-i18n="heroCta">探索产品体系 <span aria-hidden="true">↓</span></a><a class="button button-light" href="mailto:qriterion.contact@gmail.com?subject=Qriterion%20product%20enquiry" data-i18n="heroContact">与我们联系</a></div>
+      </section>
+    </header>
+
+    <main>
+      <section id="products" class="product-map section">
+        <div class="shell">
+          <div class="section-heading"><div><span class="pill" data-i18n="mapEyebrow">从证据到行动</span><h2 data-i18n="mapTitle">一条证据链，四项产品。</h2></div><p data-i18n="mapIntro">每一层都建立在上一层可追溯的数据之上：先统一测量，再独立验证，进而形成决策数据；智能路由是这套证据网络成熟后的长期能力。</p></div>
+          <div class="product-grid">
+            <article class="product-card product-card--gauge">
+              <div class="product-topline"><span>01 / MEASURE</span><span class="status status-open" data-i18n="gaugeStatus">开放源代码</span></div>
+              <div><p class="product-family" data-i18n="gaugeFamily">开放基准套件</p><h3>Qriterion Gauge</h3><p class="product-subtitle" data-i18n="gaugeSubtitle">量子硬件开放基准测试套件</p></div>
+              <p class="product-copy" data-i18n="gaugeCopy">用 vendor-neutral、可复现的协议，降低跨平台 QPU 测试与横向比较的门槛。</p>
+              <ul><li data-i18n="gaugeItem1">标准化 workload 与测试协议</li><li data-i18n="gaugeItem2">自动化执行与统一数据格式</li><li data-i18n="gaugeItem3">覆盖硬件、circuit 与 algorithm 层表现</li></ul>
+              <p class="product-for"><b data-i18n="forLabel">面向</b><span data-i18n="gaugeFor">开发者、研究机构与 QPU 厂商</span></p>
+            </article>
+            <article class="product-card product-card--verification">
+              <div class="product-topline"><span>02 / VERIFY</span><span class="status status-service" data-i18n="verificationStatus">验证服务</span></div>
+              <div><p class="product-family" data-i18n="verificationFamily">独立评估</p><h3>Qriterion Verification</h3><p class="product-subtitle" data-i18n="verificationSubtitle">第三方独立 QPU 验证</p></div>
+              <p class="product-copy" data-i18n="verificationCopy">将 QPU 性能声明转化为可审计、可追溯、可引用的第三方性能证据。</p>
+              <ul><li data-i18n="verificationItem1">指定设备或云端 QPU 的独立测试</li><li data-i18n="verificationItem2">原始数据、统计分析与测试环境记录</li><li data-i18n="verificationItem3">标准化的验证报告与证据状态</li></ul>
+              <p class="product-for"><b data-i18n="forLabel">面向</b><span data-i18n="verificationFor">QPU 厂商、采购方与投资机构</span></p>
+            </article>
+            <article class="product-card product-card--atlas">
+              <div class="product-topline"><span>03 / UNDERSTAND</span><span class="status status-data" data-i18n="atlasStatus">数据服务</span></div>
+              <div><p class="product-family" data-i18n="atlasFamily">性能情报</p><h3>Qriterion Atlas</h3><p class="product-subtitle" data-i18n="atlasSubtitle">商业量子性能数据服务</p></div>
+              <p class="product-copy" data-i18n="atlasCopy">把跨厂商、跨硬件路线与跨时间积累的 benchmark 结果，转化为可用于技术与商业决策的数据资产。</p>
+              <ul><li data-i18n="atlasItem1">历史性能、代际变化与任务表现</li><li data-i18n="atlasItem2">成本、稳定性与证据状态的结构化视图</li><li data-i18n="atlasItem3">订阅数据库、报告、API 与定制分析</li></ul>
+              <p class="product-for"><b data-i18n="forLabel">面向</b><span data-i18n="atlasFor">投资、采购、政府与产业研究机构</span></p>
+            </article>
+            <article class="product-card product-card--router">
+              <div class="product-topline"><span>04 / ROUTE</span><span class="status status-future" data-i18n="routerStatus">长期目标</span></div>
+              <div><p class="product-family" data-i18n="routerFamily">智能调度</p><h3>Qriterion Intelligent Router</h3><p class="product-subtitle" data-i18n="routerSubtitle">基于证据的量子算力路由</p></div>
+              <p class="product-copy" data-i18n="routerCopy">在充分积累 benchmark 与真实 workload 数据后，为每项任务匹配最合适的 QPU、云平台与执行路径。</p>
+              <ul><li data-i18n="routerItem1">结合任务、精度、预算与时间约束</li><li data-i18n="routerItem2">预测执行表现、成本、排队与成功率</li><li data-i18n="routerItem3">推荐 QPU、编译策略与执行方案</li></ul>
+              <p class="product-for"><b data-i18n="forLabel">面向</b><span data-i18n="routerFor">企业用户、量子云平台与开发者</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="evidence-chain"><div class="shell"><span data-i18n="chainOne">统一测量</span><i aria-hidden="true">→</i><span data-i18n="chainTwo">独立验证</span><i aria-hidden="true">→</i><span data-i18n="chainThree">决策数据</span><i aria-hidden="true">→</i><span data-i18n="chainFour">智能路由</span></div></section>
+
+      <section id="contact" class="contact"><div class="shell contact-inner"><div><span class="pill" data-i18n="contactEyebrow">共同建立评测标准</span><h2 data-i18n="contactTitle">更好的量子决策，始于更可靠的证据。</h2><p data-i18n="contactText">无论是使用 Gauge、开展独立验证，还是探索 Atlas 数据服务，欢迎与我们交流。</p></div><div class="contact-actions"><a class="button" href="mailto:qriterion.contact@gmail.com?subject=Qriterion%20product%20enquiry" data-i18n="contactCta">开始交流 <span aria-hidden="true">→</span></a><a class="mail" href="mailto:qriterion.contact@gmail.com">qriterion.contact@gmail.com</a></div></div></section>
+    </main>
+    <footer class="footer"><div class="shell"><span data-i18n="footer">© 2026 Qriterion。独立量子性能评测与决策基础设施。</span><a href="qpu-cards.html" data-i18n="footerLink">浏览 QPU Cards →</a></div></footer>
+    <script src="assets/products.js?v=20261005-1"></script>
+  </body>
+</html>
