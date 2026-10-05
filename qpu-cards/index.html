@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Source-backed QPU cards generated from the QCVV quantum cloud benchmarking dataset." />
+    <title>QPU Cards · QCVV</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap hero">
+        <p class="eyebrow">QCVV · public benchmark observations</p>
+        <h1>QPU Cards</h1>
+        <p class="lede">Source-backed snapshots of cloud-accessible quantum processors. Values retain the QPU, date, source and measurement context needed to interpret them.</p>
+        <div class="hero-meta" aria-label="Dataset metadata">
+          <span id="card-count">Loading cards…</span>
+          <span>Public observations only</span>
+          <span>Updated 2026-10-05</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="controls" aria-label="Filter QPU cards">
+        <label>
+          <span>Search</span>
+          <input id="search" type="search" placeholder="QPU, provider or metric" autocomplete="off" />
+        </label>
+        <label>
+          <span>Provider</span>
+          <select id="provider-filter"><option value="">All providers</option></select>
+        </label>
+        <label>
+          <span>Access route</span>
+          <select id="route-filter"><option value="">All routes</option></select>
+        </label>
+        <label>
+          <span>Metric type</span>
+          <select id="metric-filter"><option value="">All metric types</option></select>
+        </label>
+        <button id="reset" type="button" class="secondary">Reset filters</button>
+      </section>
+
+      <p id="results" class="results" aria-live="polite"></p>
+      <section id="cards" class="cards" aria-label="QPU cards"></section>
+
+      <section class="method" aria-labelledby="method-title">
+        <h2 id="method-title">How to read these cards</h2>
+        <ul>
+          <li><strong>Benchmark</strong> means a stated workload and protocol produces a result. Compare only identical protocols.</li>
+          <li><strong>Vendor metric</strong> and <strong>capability descriptor</strong> are retained, but are not universal ranking scores.</li>
+          <li><strong>Comparator</strong> keeps source language such as <code>&gt;</code>; it is not silently changed into an exact value.</li>
+        </ul>
+      </section>
+    </main>
+
+    <template id="card-template">
+      <article class="qpu-card">
+        <div class="card-topline">
+          <p class="provider"></p>
+          <span class="route"></span>
+        </div>
+        <h2></h2>
+        <p class="platform"></p>
+        <dl class="metric-grid"></dl>
+        <p class="asof"></p>
+        <details>
+          <summary>Metric details and sources</summary>
+          <div class="detail-list"></div>
+        </details>
+      </article>
+    </template>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
