@@ -104,36 +104,47 @@ Object.assign(methods, window.methodDetails || {});
 
 const groups = [["Qubit level",[["rabi","Rabi oscillations"],["ramsey","Ramsey spectroscopy & T₂*"],["rpe","Robust phase estimation"],["relaxation","T₁, T₂ & echo"],["readout","Readout response matrix"]]],["Circuit level",[["qst","Quantum state tomography"],["qpt","Quantum process tomography"],["gst","Gate-set tomography"],["standard-rb","Standard randomized benchmarking"],["interleaved-rb","Interleaved RB"],["cycle-benchmarking","Cycle benchmarking"],["xeb","Cross-entropy benchmarking"]]],["System level",[["drb","Direct randomized benchmarking"],["birb","Binary RB"],["mirror-rb","Mirror RB"],["simultaneous-rb","Simultaneous RB"],["leakage-rb","Leakage RB"],["quantum-volume","Quantum Volume"],["mcfe","Mirror circuit fidelity estimation"]]],["Application level",[["volumetric","Volumetric capability regions"],["accreditation","Circuit output accreditation"],["application-benchmarks","Application benchmarks"]]]];
 
-function generic(id) {
-  for (const [level, items] of groups) { const match = items.find(([key]) => key === id); if (match) return { title:match[1], level, kicker:"QCVV working guide", tags:["Method overview","Protocol context required"], summary:`A structured entry point for ${match[1]}. Follow its declared protocol and preserve the context needed to interpret each result.`, purpose:"<p>The QCVV Working Guide contains the procedure, limitations and reporting boundary for this method. This page is ready for the method-specific implementation note and executable example.</p>", theory:"<p>Choose the model before collecting data: a fitted number only estimates the property that its assumptions make identifiable. Fix compilation, qubits, timing, readout and acquisition order before comparison.</p><span class=\"equation\">recorded result = estimate + protocol assumptions + execution context</span><div class=\"theory-callout\"><strong>General rule:</strong> retain raw counts and circuit-level records so models, uncertainty and residuals can be re-evaluated.</div>", steps:["Define the target property and assumptions.","Freeze hardware and compilation context.","Use pilot data and randomized acquisition order.","Fit with a likelihood or bootstrap suited to recorded data.","Report scope and limitations with every estimate."], circuit:"cycle", code:"cycle", description:"A portable OpenQASM 3 starting point; replace it with the protocol-specific generated circuit before execution.", reports:["Exact protocol and assumptions.","QPU, calibration, compiler, timing and measurement context.","Raw counts, uncertainty method, residuals and limitations."] }; }
-  return methods["standard-rb"];
+function comingSoon(id) {
+  for (const [level, items] of groups) {
+    const match=items.find(([key])=>key===id);
+    if(match) return {title:match[1],level,kicker:"Planned documentation",status:"coming-soon",tags:["Coming soon"],summary:"This method is part of the Qriterion benchmarking suite, but its reviewed protocol documentation is not yet available.",purpose:"<div class=\"doc-callout\"><strong>Coming soon.</strong> This page is intentionally reserved until the method's theory, operational procedure, metrics, failure modes, reporting contract and primary arXiv references have completed review.</div><p>No generic circuit, fit model or placeholder metric is shown here, because those could be mistaken for a validated implementation of this method.</p>",steps:[],reports:[]};
+  }
+  return {title:"Method",level:"QCVV suite",kicker:"Planned documentation",status:"coming-soon",tags:["Coming soon"],summary:"Reviewed documentation is not yet available.",purpose:"<p>Coming soon.</p>",steps:[],reports:[]};
 }
 
 function copy(text, button, label) { const fallback=()=>{const area=document.createElement("textarea");area.value=text;area.style.cssText="position:fixed;opacity:0";document.body.append(area);area.select();document.execCommand("copy");area.remove();}; (navigator.clipboard?.writeText(text).catch(fallback)||Promise.resolve()).then(()=>{button.textContent="✓ Copied";button.classList.add("copied");setTimeout(()=>{button.textContent=label;button.classList.remove("copied");},1600);}); }
 
-function renderNavigation(active) { const nav=document.querySelector("#method-navigation"); nav.replaceChildren(); for (const [name,items] of groups) { const section=document.createElement("section"), title=document.createElement("button"), list=document.createElement("div"); section.className="nav-group";title.className="nav-group-title";title.type="button";title.textContent=name;list.className="nav-items";title.addEventListener("click",()=>{list.hidden=!list.hidden;}); for (const [id,label] of items) { const button=document.createElement("button");button.type="button";button.className="method-link";button.textContent=label;if(id===active)button.setAttribute("aria-current","page");button.addEventListener("click",()=>select(id));list.append(button);} section.append(title,list);nav.append(section); } }
+function renderNavigation(active) { const nav=document.querySelector("#method-navigation"); nav.replaceChildren(); for (const [name,items] of groups) { const section=document.createElement("section"), title=document.createElement("button"), list=document.createElement("div"); section.className="nav-group";title.className="nav-group-title";title.type="button";title.textContent=name;list.className="nav-items";title.addEventListener("click",()=>{list.hidden=!list.hidden;}); for (const [id,label] of items) { const button=document.createElement("button"),labelNode=document.createElement("span");button.type="button";button.className="method-link";labelNode.textContent=label;button.append(labelNode);if(!window.methodDetails?.[id]){const status=document.createElement("small");status.textContent="Coming soon";button.classList.add("coming-soon");button.append(status);}if(id===active)button.setAttribute("aria-current","page");button.addEventListener("click",()=>select(id));list.append(button);} section.append(title,list);nav.append(section); } }
 
 function select(id) {
-  const method=methods[id]||generic(id), article=document.querySelector("#method-article"), fragment=document.querySelector("#method-template").content.cloneNode(true);
-  const circuitHtml=method.circuitHtml||diagram[method.circuit], quantikzSource=method.quantikzSource||quantikz[method.circuit], qasmSource=method.qasmSource||qasm[method.code];
+  const method=window.methodDetails?.[id]||comingSoon(id), article=document.querySelector("#method-article"), fragment=document.querySelector("#method-template").content.cloneNode(true);
+  const circuitHtml=method.circuitHtml||(method.circuit?diagram[method.circuit]:""), quantikzSource=method.quantikzSource||(method.circuit?quantikz[method.circuit]:""), codeSource=method.codeSource||method.qasmSource||(method.code?qasm[method.code]:"");
   fragment.querySelector(".crumb-level").textContent=method.level;
   fragment.querySelector(".crumb-title").textContent=method.title;
   fragment.querySelector(".article-kicker").textContent=method.kicker;
   fragment.querySelector("h1").textContent=method.title;
   fragment.querySelector(".article-summary").textContent=method.summary;
   fragment.querySelector(".purpose-content").innerHTML=method.purpose;
-  fragment.querySelector(".theory-content").innerHTML=method.theory;
+  fragment.querySelector(".theory-content").innerHTML=method.theory||"";
   fragment.querySelector(".method-deep-dive").innerHTML=method.deepDive||"";
   fragment.querySelector(".circuit-figure").innerHTML=circuitHtml;
   fragment.querySelector(".quantikz-source").textContent=quantikzSource;
-  fragment.querySelector(".qasm-code").textContent=qasmSource;
-  fragment.querySelector(".qasm-description").textContent=method.description;
+  fragment.querySelector(".code-section h2").textContent=method.codeTitle||"OpenQASM 3 sample";
+  fragment.querySelector(".qasm-code").textContent=codeSource;
+  fragment.querySelector(".qasm-description").textContent=method.description||"";
   for(const tag of method.tags){const el=document.createElement("span");el.textContent=tag;fragment.querySelector(".protocol-tags").append(el);}
   for(const step of method.steps){const el=document.createElement("li");el.textContent=step;fragment.querySelector(".method-steps").append(el);}
   for(const report of method.reports){const el=document.createElement("li");el.textContent=report;fragment.querySelector(".report-list").append(el);}
+  if(!circuitHtml) fragment.querySelector(".circuit-section").hidden=true;
+  if(!codeSource) fragment.querySelector(".code-section").hidden=true;
+  if(method.status==="coming-soon") {
+    fragment.querySelector(".article-intro").classList.add("coming-soon-page");
+    for(const selector of [".theory-content", ".method-deep-dive", ".method-steps", ".report-list"]) fragment.querySelector(selector)?.closest("section")?.setAttribute("hidden","");
+    fragment.querySelector(".working-guide-note").hidden=true;
+  }
   const qtz=fragment.querySelector(".quantikz-copy"),qasmButton=fragment.querySelector(".qasm-copy");
   qtz.addEventListener("click",()=>copy(quantikzSource,qtz,"⧉ Copy Quantikz"));
-  qasmButton.addEventListener("click",()=>copy(qasmSource,qasmButton,"⧉ Copy code"));
+  qasmButton.addEventListener("click",()=>copy(codeSource,qasmButton,"⧉ Copy code"));
   if(window.MathJax?.typesetClear) window.MathJax.typesetClear([article]);
   article.replaceChildren(fragment);
   renderNavigation(id);
@@ -154,4 +165,4 @@ function setSidebar(collapsed) {
 try { setSidebar(localStorage.getItem("qriterion-docs-sidebar-collapsed") === "true"); } catch (_) { setSidebar(false); }
 sidebarToggle.addEventListener("click", () => setSidebar(!layout.classList.contains("sidebar-collapsed")));
 
-const initial=location.hash.slice(1);select(initial || "standard-rb");
+const initial=location.hash.slice(1);select(initial || "rabi");
