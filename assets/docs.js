@@ -100,6 +100,8 @@ const methods = {
   "quantum-volume": { title:"Quantum Volume", level:"System level", kicker:"Volumetric benchmark", tags:["Executed educational tutorial","Heavy-output probability","Square circuits"], summary:"Test a processor on shaped random circuits using a declared ensemble, width/depth sweep and heavy-output criterion.", purpose:"<p>Report a capability region or quantum-volume-style pass criterion only with the circuit construction and statistical confidence procedure made explicit.</p>", theory:`<p>For every ideal random circuit, divide outcomes into heavy and light sets from ideal output probabilities. Heavy-output probability summarizes whether observed samples favor the high-probability half.</p><span class="equation">HOP = Pr<sub>x∼experiment</sub>[x ∈ heavy(C)]</span><p>Width and depth scale together for a square family. The metric remains specific to its ensemble and compiler policy; the QCVV tutorial uses portable educational circuits, not the original Haar-SU(4) construction.</p><div class="theory-callout"><strong>Do not overclaim:</strong> the simulation method, confidence bound and circuit ensemble are part of the definition.</div>`, steps:["Declare the square-circuit family, native decomposition and compilation policy.","Generate fixed-seed circuits and ideal probabilities with a recorded simulator method.","Execute samples in randomized order and retain raw circuit-level counts.","Calculate per-circuit heavy-output probability and aggregate with uncertainty.","Report a pass only with its stated threshold and construction details."], circuit:"qv", code:"qv", description:"A portable square-circuit illustration. Use a declared random ensemble rather than this fixed example for a benchmark.", reports:["Circuit ensemble, width/depth, compiler and simulation precision.","Per-circuit results, aggregation and confidence bound.","Timing, shots, qubit mapping and calibration context."] },
 };
 
+Object.assign(methods, window.methodDetails || {});
+
 const groups = [["Qubit level",[["rabi","Rabi oscillations"],["ramsey","Ramsey spectroscopy & T₂*"],["rpe","Robust phase estimation"],["relaxation","T₁, T₂ & echo"],["readout","Readout response matrix"]]],["Circuit level",[["qst","Quantum state tomography"],["qpt","Quantum process tomography"],["gst","Gate-set tomography"],["standard-rb","Standard randomized benchmarking"],["interleaved-rb","Interleaved RB"],["cycle-benchmarking","Cycle benchmarking"],["xeb","Cross-entropy benchmarking"]]],["System level",[["drb","Direct randomized benchmarking"],["birb","Binary RB"],["mirror-rb","Mirror RB"],["simultaneous-rb","Simultaneous RB"],["leakage-rb","Leakage RB"],["quantum-volume","Quantum Volume"],["mcfe","Mirror circuit fidelity estimation"]]],["Application level",[["volumetric","Volumetric capability regions"],["accreditation","Circuit output accreditation"],["application-benchmarks","Application benchmarks"]]]];
 
 function generic(id) {
@@ -111,7 +113,34 @@ function copy(text, button, label) { const fallback=()=>{const area=document.cre
 
 function renderNavigation(active) { const nav=document.querySelector("#method-navigation"); nav.replaceChildren(); for (const [name,items] of groups) { const section=document.createElement("section"), title=document.createElement("button"), list=document.createElement("div"); section.className="nav-group";title.className="nav-group-title";title.type="button";title.textContent=name;list.className="nav-items";title.addEventListener("click",()=>{list.hidden=!list.hidden;}); for (const [id,label] of items) { const button=document.createElement("button");button.type="button";button.className="method-link";button.textContent=label;if(id===active)button.setAttribute("aria-current","page");button.addEventListener("click",()=>select(id));list.append(button);} section.append(title,list);nav.append(section); } }
 
-function select(id) { const method=methods[id]||generic(id), article=document.querySelector("#method-article"), fragment=document.querySelector("#method-template").content.cloneNode(true); fragment.querySelector(".crumb-level").textContent=method.level;fragment.querySelector(".crumb-title").textContent=method.title;fragment.querySelector(".article-kicker").textContent=method.kicker;fragment.querySelector("h1").textContent=method.title;fragment.querySelector(".article-summary").textContent=method.summary;fragment.querySelector(".purpose-content").innerHTML=method.purpose;fragment.querySelector(".theory-content").innerHTML=method.theory;fragment.querySelector(".circuit-figure").innerHTML=diagram[method.circuit];fragment.querySelector(".quantikz-source").textContent=quantikz[method.circuit];fragment.querySelector(".qasm-code").textContent=qasm[method.code];fragment.querySelector(".qasm-description").textContent=method.description;for(const tag of method.tags){const el=document.createElement("span");el.textContent=tag;fragment.querySelector(".protocol-tags").append(el);}for(const step of method.steps){const el=document.createElement("li");el.textContent=step;fragment.querySelector(".method-steps").append(el);}for(const report of method.reports){const el=document.createElement("li");el.textContent=report;fragment.querySelector(".report-list").append(el);}const qtz=fragment.querySelector(".quantikz-copy"),qasmButton=fragment.querySelector(".qasm-copy");qtz.addEventListener("click",()=>copy(quantikz[method.circuit],qtz,"⧉ Copy Quantikz"));qasmButton.addEventListener("click",()=>copy(qasm[method.code],qasmButton,"⧉ Copy code"));article.replaceChildren(fragment);renderNavigation(id);history.replaceState(null,"",`#${id}`);if(innerWidth<900)article.scrollIntoView({behavior:"smooth",block:"start"}); }
+function select(id) {
+  const method=methods[id]||generic(id), article=document.querySelector("#method-article"), fragment=document.querySelector("#method-template").content.cloneNode(true);
+  const circuitHtml=method.circuitHtml||diagram[method.circuit], quantikzSource=method.quantikzSource||quantikz[method.circuit], qasmSource=method.qasmSource||qasm[method.code];
+  fragment.querySelector(".crumb-level").textContent=method.level;
+  fragment.querySelector(".crumb-title").textContent=method.title;
+  fragment.querySelector(".article-kicker").textContent=method.kicker;
+  fragment.querySelector("h1").textContent=method.title;
+  fragment.querySelector(".article-summary").textContent=method.summary;
+  fragment.querySelector(".purpose-content").innerHTML=method.purpose;
+  fragment.querySelector(".theory-content").innerHTML=method.theory;
+  fragment.querySelector(".method-deep-dive").innerHTML=method.deepDive||"";
+  fragment.querySelector(".circuit-figure").innerHTML=circuitHtml;
+  fragment.querySelector(".quantikz-source").textContent=quantikzSource;
+  fragment.querySelector(".qasm-code").textContent=qasmSource;
+  fragment.querySelector(".qasm-description").textContent=method.description;
+  for(const tag of method.tags){const el=document.createElement("span");el.textContent=tag;fragment.querySelector(".protocol-tags").append(el);}
+  for(const step of method.steps){const el=document.createElement("li");el.textContent=step;fragment.querySelector(".method-steps").append(el);}
+  for(const report of method.reports){const el=document.createElement("li");el.textContent=report;fragment.querySelector(".report-list").append(el);}
+  const qtz=fragment.querySelector(".quantikz-copy"),qasmButton=fragment.querySelector(".qasm-copy");
+  qtz.addEventListener("click",()=>copy(quantikzSource,qtz,"⧉ Copy Quantikz"));
+  qasmButton.addEventListener("click",()=>copy(qasmSource,qasmButton,"⧉ Copy code"));
+  if(window.MathJax?.typesetClear) window.MathJax.typesetClear([article]);
+  article.replaceChildren(fragment);
+  renderNavigation(id);
+  history.replaceState(null,"",`#${id}`);
+  if(window.MathJax?.typesetPromise) window.MathJax.typesetPromise([article]).catch(()=>{});
+  if(innerWidth<900)article.scrollIntoView({behavior:"smooth",block:"start"});
+}
 
 const layout = document.querySelector(".docs-layout");
 const sidebarToggle = document.querySelector("#sidebar-toggle");

@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Qriterion documentation for quantum characterization, verification and validation methods." />
     <title>Docs · Qriterion</title>
-    <link rel="stylesheet" href="assets/docs.css?v=20261005-3" />
+    <link rel="stylesheet" href="assets/docs.css?v=20261006-1" />
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] },
+        options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <header class="docs-topbar">
@@ -28,12 +35,14 @@
       <div class="article-intro"><p class="article-kicker"></p><h1></h1><p class="article-summary"></p><div class="protocol-tags"></div></div>
       <section class="article-section purpose"><h2>Purpose and output</h2><div class="purpose-content"></div></section>
       <section class="article-section"><h2>Theory and derivation</h2><div class="theory-content"></div></section>
+      <div class="method-deep-dive"></div>
       <section class="article-section"><h2>Experimental design</h2><ol class="method-steps"></ol></section>
       <section class="article-section circuit-section"><div class="section-heading-row"><div><h2>Circuit illustration</h2><p>Quantikz representation of the experimental primitive.</p></div><button class="copy-button quantikz-copy" type="button">⧉ Copy Quantikz</button></div><div class="circuit-figure"></div><details class="source-details"><summary>View Quantikz source</summary><pre class="quantikz-source"></pre></details></section>
       <section class="article-section code-section"><div class="section-heading-row"><div><h2>OpenQASM 3 sample</h2><p class="qasm-description"></p></div><button class="copy-button qasm-copy" type="button">⧉ Copy code</button></div><pre><code class="qasm-code"></code></pre></section>
       <section class="article-section report-section"><h2>What to report</h2><ul class="report-list"></ul></section>
       <section id="method-source" class="working-guide-note"><strong>Based on the QCVV Working Guide.</strong><span>This page follows its platform-neutral procedure: record the QPU, compilation policy, calibration context, timing, raw counts, and acquisition timestamps alongside every estimate.</span></section>
     </template>
-    <script src="assets/docs.js?v=20261005-3" defer></script>
+    <script src="assets/method-details.js?v=20261006-2" defer></script>
+    <script src="assets/docs.js?v=20261006-1" defer></script>
   </body>
 </html>
